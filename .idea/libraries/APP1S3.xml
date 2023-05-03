@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="APP1S3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/MenuFact01.zip!/" />
+      <root url="jar://$PROJECT_DIR$/MenuFact01_DClasses.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
