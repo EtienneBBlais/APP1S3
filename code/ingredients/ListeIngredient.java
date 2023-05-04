@@ -1,5 +1,6 @@
 package ingredients;
 
+import ingredients.exceptions.IngredientException;
 public class ListeIngredient {
 
     /*******************************
@@ -11,9 +12,12 @@ public class ListeIngredient {
     /********************************
     --Constructeur
      *******************************/
-    public ListeIngredient(Ingredient ing, int qt){
+    public ListeIngredient(Ingredient ing, int quantite) throws IngredientException{
         ingredient = ing;
-        quantite = qt;
+        if (quantite < 0)
+            throw new IngredientException("Il n'est pas possible d'avoir une quantité negative");
+        else
+            this.quantite = quantite;
     }
 
     /**********************************
@@ -22,14 +26,30 @@ public class ListeIngredient {
     public Ingredient getIngredient() {
         return ingredient;
     }
-    public void setQuantite(int quantite) {
-        this.quantite = quantite;
-    }
-    public int getQuantite(){
-        return quantite;
-    }
     public void setIngredient(Ingredient ingredient) {
         this.ingredient = ingredient;
     }
+
+    public int getQuantite(){
+        return quantite;
+    }
+    public void setQuantite(int quantite) throws IngredientException{
+        if (quantite < 0)
+            throw new IngredientException("Il n'est pas possible d'avoir une quantité negative");
+        else
+            this.quantite = quantite;
+    }
+
+    /******************************
+    -- Miscellaneous Function
+     *****************************/
+
+    @Override
+    public String toString() {
+        return ingredient +
+                ", quantite=" + quantite;
+    }
+
+
 
 }

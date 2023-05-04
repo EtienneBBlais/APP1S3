@@ -1,11 +1,17 @@
 package menufact;
 
+import ingredients.Ingredient;
+import ingredients.Legume;
+import ingredients.ListeIngredient;
+import ingredients.TypeIngredient;
+import ingredients.exceptions.IngredientException;
 import menufact.facture.exceptions.FactureException;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
 import menufact.plats.PlatAuMenu;
 import menufact.plats.PlatChoisi;
 import menufact.plats.PlatSante;
+import menufact.plats.Recette;
 
 public class TestMenuFact02 {
 
@@ -34,6 +40,9 @@ public class TestMenuFact02 {
         Facture f1 = new Facture("Ma facture");
 
         Client c1 = new Client(1,"Mr Client","1234567890");
+
+
+
 
 
         t.test1_AffichePlatsAuMenu(trace, p1,p2,p3,p4,p5);
@@ -94,6 +103,17 @@ public class TestMenuFact02 {
             System.out.println(fe.getMessage());
         }
 
+        try {
+            t.test10_AffichageRecette();
+        }
+        catch (IngredientException ie)
+        {
+            System.out.println(ie.getMessage());
+        }
+        catch (MenuException me)
+        {
+            System.out.println(me.getMessage());
+        }
 
 
 
@@ -290,5 +310,25 @@ public class TestMenuFact02 {
         f1.payer();
         System.out.println("Apres avoir paye la facture");
         System.out.println(f1);
+    }
+
+    private void test10_AffichageRecette() throws IngredientException, MenuException{
+        System.out.println("===test10_AffichageRecette");
+        Ingredient i1 = new Ingredient("Steak", "Angus", TypeIngredient.VIANDE);
+        ListeIngredient l1;
+        l1 = new ListeIngredient(i1, 100);
+
+        Ingredient i2 = new Legume();
+        i2.setNom("Brocoli");
+        i2.setDescription("Vert");
+        ListeIngredient l2;
+        l2 = new ListeIngredient(i2, 50);
+
+
+
+        Recette r1 = new Recette();
+        r1.ajouterIngredient(l1);
+        r1.ajouterIngredient(l2);
+        System.out.println(r1);
     }
 }
