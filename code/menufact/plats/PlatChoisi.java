@@ -4,6 +4,7 @@ import menufact.plats.PlatAuMenu;
 
 public class PlatChoisi {
     private PlatAuMenu plat;
+    private Chef etat;
     private int quantite;
 
     public PlatChoisi(PlatAuMenu plat, int quantite) {
@@ -29,5 +30,9 @@ public class PlatChoisi {
 
     public PlatAuMenu getPlat() {
         return plat;
+    }
+
+    public void changeState(Chef nouvelEtat) {
+        this.etat = nouvelEtat;
     }
 }
