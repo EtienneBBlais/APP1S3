@@ -1,19 +1,32 @@
 package menufact.plats;
 
 public class PlatAuMenu {
+
+    /************************************
+    --Attribut
+     ***********************************/
     private int code;
     private String description;
     private double prix;
 
+    private Recette recette;
+
+    /***********************************
+    --Constructeur
+     **********************************/
     public PlatAuMenu(int code, String description, double prix) {
         this.code = code;
         this.description = description;
         this.prix = prix;
+        recette = new Recette();
     }
 
     public PlatAuMenu() {
     }
 
+    /**********************************
+    --Affichage
+     *********************************/
     @Override
     public String toString() {
         return "menufact.plats.PlatAuMenu{" +
@@ -23,6 +36,9 @@ public class PlatAuMenu {
                 "}\n";
     }
 
+    /***************************************
+    --Getter/Setter
+     **************************************/
     public int getCode() {
         return code;
     }
@@ -45,5 +61,8 @@ public class PlatAuMenu {
 
     public void setPrix(double prix) {
         this.prix = prix;
+    }
+    public Recette getRecette() {
+        return recette;
     }
 }
