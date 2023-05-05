@@ -3,11 +3,9 @@ package menufact;
 import menufact.facture.exceptions.FactureException;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
-import menufact.plats.PlatAuMenu;
-import menufact.plats.PlatChoisi;
-import menufact.plats.PlatSante;
+import menufact.plats.*;
 
-public class TestMenuFact02 {
+public class  TestMenuFact02 {
 
     public static void main(String[] args) {
         boolean trace = true;
@@ -26,6 +24,7 @@ public class TestMenuFact02 {
         PlatSante ps3 = new PlatSante(12,"PlatSante2",30,11,11,11);
         PlatSante ps4 = new PlatSante(13,"PlatSante3",40,11,11,11);
         PlatSante ps5 = new PlatSante(14,"PlatSante4",50,11,11,11);
+
 
 
         Menu m1 = new Menu("menufact.Menu 1");
@@ -242,6 +241,16 @@ public class TestMenuFact02 {
         try
         {
             f1.ajoutePlat(platChoisi);
+            
+            platChoisi.changeState(new CommanderEtat(platChoisi));
+
+// Lorsque le plat est en cours de préparation
+            String resultat = platChoisi.getEtat().onPreparation();
+            System.out.println(resultat); // Affiche "de commande a preparation"
+
+// Lorsque le plat est terminé
+            resultat = platChoisi.getEtat().onTermine();
+            System.out.println(resultat); // Affiche le message correspondant à l'état actuel
         }
         catch (FactureException fe)
         {

@@ -1,9 +1,9 @@
 package menufact.plats;
 
-public abstract class Chef {
+public abstract class PlatEtat {
     PlatChoisi platChoisi;
 
-    Chef(PlatChoisi platChoisi) {
+    PlatEtat(PlatChoisi platChoisi) {
         this.platChoisi = platChoisi;
     }
 
@@ -12,6 +12,7 @@ public abstract class Chef {
     public abstract String onTermine();
     public abstract String onServi();
     public abstract String onPuDIngredient();
+
 }
 
 

@@ -1,6 +1,6 @@
 package menufact.plats;
 
-public class TerminerEtat extends Chef {
+public class TerminerEtat extends PlatEtat {
 
     TerminerEtat(PlatChoisi platChoisi) {
         super(platChoisi);

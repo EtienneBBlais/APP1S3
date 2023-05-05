@@ -2,6 +2,8 @@ package menufact.facture;
 
 import menufact.Client;
 import menufact.facture.exceptions.FactureException;
+import menufact.plats.EventManager;
+import menufact.plats.NouveauPlatListener;
 import menufact.plats.PlatChoisi;
 
 import java.util.ArrayList;
@@ -13,6 +15,7 @@ import java.util.Date;
  * @version 1.0
  */
 public class Facture {
+    public EventManager events;
     private Date date;
     private String description;
     private FactureEtat etat;
@@ -115,6 +118,7 @@ public class Facture {
         etat = FactureEtat.OUVERTE;
         courant = -1;
         this.description = description;
+        events = new EventManager("nouveauPlat");
     }
 
     /**
@@ -124,10 +128,15 @@ public class Facture {
      */
     public void ajoutePlat(PlatChoisi p) throws FactureException
     {
-        if (etat == FactureEtat.OUVERTE)
+        if (etat == FactureEtat.OUVERTE) {
             platchoisi.add(p);
+            events.subscribe("nouveauPlat", new NouveauPlatListener(platchoisi.toString()));
+            events.notify("nouveauPlat");
+
+        }
         else
             throw new FactureException("On peut ajouter un plat seulement sur une facture OUVERTE.");
+
     }
 
     /**

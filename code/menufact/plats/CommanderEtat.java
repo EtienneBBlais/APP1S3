@@ -1,8 +1,8 @@
 package menufact.plats;
 
-public class CommanderEtat extends Chef {
+public class CommanderEtat extends PlatEtat {
 
-    CommanderEtat(PlatChoisi platChoisi) {
+    public CommanderEtat(PlatChoisi platChoisi) {
         super(platChoisi);
     }
 

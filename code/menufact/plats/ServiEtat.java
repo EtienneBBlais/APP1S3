@@ -1,6 +1,6 @@
 package menufact.plats;
 
-public class ServiEtat extends Chef {
+public class ServiEtat extends PlatEtat {
 
     ServiEtat(PlatChoisi platChoisi) {
         super(platChoisi);
@@ -8,26 +8,26 @@ public class ServiEtat extends Chef {
 
     @Override
     public String onCommande() {
-        return "Cannot execute onCommande in IngrédientInsuffisantEtat";
+        return "dejaServi";
     }
 
     @Override
     public String onPreparation() {
-        return "Cannot execute onPreparation in IngrédientInsuffisantEtat";
+        return "dejaServi";
     }
 
     @Override
     public String onTermine() {
-        return "Cannot execute onTermine in IngrédientInsuffisantEtat";
+        return "dejaServi";
     }
 
     @Override
     public String onServi() {
-        return "Cannot execute onServi in IngrédientInsuffisantEtat";
+        return "dejaServi";
     }
 
     @Override
     public String onPuDIngredient() {
-        return "Cannot execute onPuDIngredient in IngrédientInsuffisantEtat";
+        return "dejaServi";
     }
 }

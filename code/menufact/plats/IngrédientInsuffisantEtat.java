@@ -1,6 +1,6 @@
 package menufact.plats;
 
-public class IngrédientInsuffisantEtat extends Chef {
+public class IngrédientInsuffisantEtat extends PlatEtat {
 
     IngrédientInsuffisantEtat(PlatChoisi platChoisi) {
         super(platChoisi);
