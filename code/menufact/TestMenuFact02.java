@@ -1,11 +1,16 @@
 package menufact;
 
+import ingredients.*;
+import ingredients.exceptions.IngredientException;
 import menufact.facture.exceptions.FactureException;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
-import menufact.plats.*;
+import menufact.plats.PlatAuMenu;
+import menufact.plats.PlatChoisi;
+import menufact.plats.PlatSante;
+import menufact.plats.Recette;
 
-public class  TestMenuFact02 {
+public class TestMenuFact02 {
 
     public static void main(String[] args) {
         boolean trace = true;
@@ -26,13 +31,15 @@ public class  TestMenuFact02 {
         PlatSante ps5 = new PlatSante(14,"PlatSante4",50,11,11,11);
 
 
-
         Menu m1 = new Menu("menufact.Menu 1");
         Menu m2 = new Menu("menufact.Menu 2");
 
         Facture f1 = new Facture("Ma facture");
 
         Client c1 = new Client(1,"Mr Client","1234567890");
+
+
+
 
 
         t.test1_AffichePlatsAuMenu(trace, p1,p2,p3,p4,p5);
@@ -93,6 +100,17 @@ public class  TestMenuFact02 {
             System.out.println(fe.getMessage());
         }
 
+        try {
+            t.test10_AffichageRecette();
+        }
+        catch (IngredientException ie)
+        {
+            System.out.println(ie.getMessage());
+        }
+        catch (MenuException me)
+        {
+            System.out.println(me.getMessage());
+        }
 
 
 
@@ -241,16 +259,6 @@ public class  TestMenuFact02 {
         try
         {
             f1.ajoutePlat(platChoisi);
-            
-            platChoisi.changeState(new CommanderEtat(platChoisi));
-
-// Lorsque le plat est en cours de préparation
-            String resultat = platChoisi.getEtat().onPreparation();
-            System.out.println(resultat); // Affiche "de commande a preparation"
-
-// Lorsque le plat est terminé
-            resultat = platChoisi.getEtat().onTermine();
-            System.out.println(resultat); // Affiche le message correspondant à l'état actuel
         }
         catch (FactureException fe)
         {
@@ -299,5 +307,24 @@ public class  TestMenuFact02 {
         f1.payer();
         System.out.println("Apres avoir paye la facture");
         System.out.println(f1);
+    }
+
+    private void test10_AffichageRecette() throws IngredientException, MenuException{
+        System.out.println("===test10_AffichageRecette");
+        FactoryIngredient factory = new FactoryIngredient();
+        Ingredient i1 = factory.nouveauIngredient("Steak", "Angus", TypeIngredient.VIANDE);
+        ListeIngredient l1;
+        l1 = new ListeIngredient(i1, 100);
+
+        Ingredient i2 = factory.nouveauIngredient("Brocoli", "Vert", TypeIngredient.LEGUME);
+        ListeIngredient l2;
+        l2 = new ListeIngredient(i2, 50);
+
+
+
+        Recette r1 = new Recette();
+        r1.ajouterIngredient(l1);
+        r1.ajouterIngredient(l2);
+        System.out.println(r1);
     }
 }
