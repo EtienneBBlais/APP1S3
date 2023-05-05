@@ -4,7 +4,7 @@ public class FactoryIngredient {
 
     public Ingredient nouveauIngredient(String nom, String description, TypeIngredient type){
         Ingredient produit;
-        switch (type){
+switch (type){
             case VIANDE:
                 produit = new Viande();
                 break;
@@ -28,6 +28,7 @@ public class FactoryIngredient {
             default:
                 produit = new Ingredient();
                 produit.setTypeIngredient(null);
+                break;
         }
         produit.setNom(nom);
         produit.setDescription(description);

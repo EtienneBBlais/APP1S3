@@ -3,6 +3,6 @@ package ingredients;
 public class Epice extends Ingredient{
 
     public Epice() {
-        setTypeIngredient(TypeIngredient.VIANDE);
+        setTypeIngredient(TypeIngredient.EPICE);
     }
 }
