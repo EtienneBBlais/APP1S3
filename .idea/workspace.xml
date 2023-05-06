@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Ajout de la factory">
+      <change afterPath="$PROJECT_DIR$/code/menufact/plats/ConcretePlatAuMenuBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenuBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/menufact/plats/PlatChoisiFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ingredients/Epice.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Epice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ingredients/FactoryIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/FactoryIngredient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/FactoryIngredientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/FactoryIngredientTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/TestMenuFact02.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/TestMenuFact02.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/facture/Facture.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/facture/Facture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/ingredients/Ingredient.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/ingredients/Ingredient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/inventaire/Inventaire.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/inventaire/Inventaire.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/TestMenuFact02.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/TestMenuFact02.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/facture/Facture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/facture/Facture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatAuMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatAuMenu.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +66,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "settings.editor.selected.configurable": "preferences.customizations",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,7 +84,7 @@
       <recent name="menufact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FactoryIngredientTest">
+  <component name="RunManager" selected="Application.TestMenuFact02">
     <configuration name="TestMenuFact01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="menufact.TestMenuFact01" />
       <module name="APP1S3" />
@@ -134,24 +142,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="APP1S3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="APP1S3" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMenuFact02" />
         <item itemvalue="JUnit.FactoryIngredientTest" />
         <item itemvalue="JUnit.FactoryIngredientTest.nouveauIngredient_epice" />
-        <item itemvalue="Application.TestMenuFact02" />
         <item itemvalue="Application.TestMenuFact01" />
       </list>
     </recent_temporary>
@@ -166,6 +161,8 @@
       <updated>1683140790432</updated>
       <workItem from="1683140791433" duration="3429000" />
       <workItem from="1683146882856" duration="5719000" />
+      <workItem from="1683326357655" duration="20000" />
+      <workItem from="1683326449732" duration="8425000" />
     </task>
     <task id="LOCAL-00001" summary="ii">
       <created>1683225294142</created>

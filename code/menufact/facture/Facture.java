@@ -5,6 +5,7 @@ import menufact.facture.exceptions.FactureException;
 import menufact.plats.EventManager;
 import menufact.plats.NouveauPlatListener;
 import menufact.plats.PlatChoisi;
+import menufact.plats.PlatChoisiFactory;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -16,6 +17,7 @@ import java.util.Date;
  */
 public class Facture {
     public EventManager events;
+    private PlatChoisiFactory platChoisiFactory;
     private Date date;
     private String description;
     private FactureEtat etat;
@@ -44,8 +46,8 @@ public class Facture {
     public double sousTotal()
     {
         double soustotal=0;
-         for (PlatChoisi p : platchoisi)
-             soustotal += p.getQuantite() * p.getPlat().getPrix();
+        for (PlatChoisi p : platchoisi)
+            soustotal += p.getQuantite() * p.getPlat().getPrix();
         return soustotal;
     }
 
@@ -78,14 +80,14 @@ public class Facture {
      */
     public void payer()
     {
-       etat = FactureEtat.PAYEE;
+        etat = FactureEtat.PAYEE;
     }
     /**
      * Permet de chager l'état de la facture à FERMEE
      */
     public void fermer()
     {
-       etat = FactureEtat.FERMEE;
+        etat = FactureEtat.FERMEE;
     }
 
     /**
@@ -114,6 +116,7 @@ public class Facture {
      * @param description la description de la Facture
      */
     public Facture(String description) {
+        platChoisiFactory = new PlatChoisiFactory();
         date = new Date();
         etat = FactureEtat.OUVERTE;
         courant = -1;
@@ -126,17 +129,27 @@ public class Facture {
      * @param p un plat choisi
      * @throws FactureException Seulement si la facture est OUVERTE
      */
-    public void ajoutePlat(PlatChoisi p) throws FactureException
-    {
+    public void ajoutePlat(PlatChoisi p) throws FactureException {
         if (etat == FactureEtat.OUVERTE) {
-            platchoisi.add(p);
+            boolean platExists = false;
+
+            for (PlatChoisi existingPlat : platchoisi) {
+                if (existingPlat.getPlat().equals(p.getPlat())) {
+                    existingPlat.setQuantite(existingPlat.getQuantite() + p.getQuantite());
+                    platExists = true;
+                    break;
+                }
+            }
+
+            if (!platExists) {
+                platchoisi.add(p);
+            }
+
             events.subscribe("nouveauPlat", new NouveauPlatListener(platchoisi.toString()));
             events.notify("nouveauPlat");
-
-        }
-        else
+        } else {
             throw new FactureException("On peut ajouter un plat seulement sur une facture OUVERTE.");
-
+        }
     }
 
     /**
@@ -170,10 +183,10 @@ public class Facture {
 
 
         factureGenere =   "Facture generee.\n" +
-                          "Date:" + date + "\n" +
-                          "Description: " + description + "\n" +
-                          "Client:" + client.getNom() + "\n" +
-                          "Les plats commandes:" + "\n" + lesPlats;
+                "Date:" + date + "\n" +
+                "Description: " + description + "\n" +
+                "Client:" + client.getNom() + "\n" +
+                "Les plats commandes:" + "\n" + lesPlats;
 
         factureGenere += "Seq   Plat         Prix   Quantite\n";
         for (PlatChoisi plat : platchoisi)
@@ -189,3 +202,5 @@ public class Facture {
         return factureGenere;
     }
 }
+
+
