@@ -13,6 +13,9 @@ import menufact.plats.Recette;
 public class TestMenuFact02 {
 
     public static void main(String[] args) {
+
+
+
         boolean trace = true;
 
         TestMenuFact02 t = new TestMenuFact02();
@@ -35,6 +38,8 @@ public class TestMenuFact02 {
         Menu m2 = new Menu("menufact.Menu 2");
 
         Facture f1 = new Facture("Ma facture");
+        Chef chef = new Chef();
+        f1.setChef(chef);
 
         Client c1 = new Client(1,"Mr Client","1234567890");
 
@@ -256,14 +261,14 @@ public class TestMenuFact02 {
         System.out.println("===test7_CreerFacture");
 
         PlatChoisi platChoisi = new PlatChoisi(m1.platCourant(),5);
-//        try
-//        {
-//            f1.ajoutePlat(platChoisi);
-//        }
-//        catch (FactureException fe)
-//        {
-//            throw fe;
-//        }
+        try
+        {
+            f1.ajoutePlat(platChoisi);
+        }
+        catch (FactureException fe)
+        {
+            throw fe;
+        }
         System.out.println(f1);
     }
 
@@ -286,15 +291,15 @@ public class TestMenuFact02 {
             throw me;
         }
 
-//        PlatChoisi platChoisi = new PlatChoisi(m1.platCourant(),5);
-//        try
-//        {
-//            f1.ajoutePlat(platChoisi);
-//        }
-//        catch (FactureException fe)
-//        {
-//            throw fe;
-//        }
+        PlatChoisi platChoisi = new PlatChoisi(m1.platCourant(),5);
+        try
+        {
+            f1.ajoutePlat(platChoisi);
+        }
+        catch (FactureException fe)
+        {
+            throw fe;
+        }
         System.out.println(f1);
     }
 

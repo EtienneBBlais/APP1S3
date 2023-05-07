@@ -8,6 +8,7 @@ public class PlatChoisi {
     public PlatChoisi(PlatAuMenu plat, int quantite) {
         this.plat = plat;
         this.quantite = quantite;
+        etat = new CommanderEtat(this);
     }
 
     @Override
