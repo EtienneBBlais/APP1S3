@@ -1,6 +1,5 @@
 package menufact.plats;
 
-import menufact.Menu;
 
 public class PlatAuMenu implements IPlat {
 
