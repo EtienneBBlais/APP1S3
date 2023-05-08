@@ -1,8 +1,7 @@
 package ingredientsTests;
 
 import ingredients.Ingredient;
-import ingredients.Laitier;
-import ingredients.ListeIngredient;
+import ingredients.QuantiteIngredient;
 import static org.junit.jupiter.api.Assertions.*;
 
 import ingredients.TypeIngredient;
@@ -11,7 +10,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-class ListeIngredientTest {
+class QuantiteIngredientTest {
     static Ingredient i1;
     static Ingredient i2;
 
@@ -25,7 +24,7 @@ class ListeIngredientTest {
     @DisplayName("Test ListeIngredient")
     void ListeIngredient(){
         try{
-            ListeIngredient liste = new ListeIngredient(i1, 50);
+            QuantiteIngredient liste = new QuantiteIngredient(i1, 50);
         }
         catch(IngredientException ie){
             fail("Not suppose to throw a execption");

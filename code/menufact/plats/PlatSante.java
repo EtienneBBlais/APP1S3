@@ -4,12 +4,14 @@ public class PlatSante extends PlatDecorator {
     private double kcal;
     private double chol;
     private double gras;
+    private Recette recette;
 
     public PlatSante(IPlat plat, double kcal, double chol, double gras) {
         super(plat);
         this.kcal = kcal;
         this.chol = chol;
         this.gras = gras;
+        recette = new Recette();
     }
 
 
@@ -63,5 +65,10 @@ public class PlatSante extends PlatDecorator {
     @Override
     public void setPrix(double prix) {
         plat.setPrix(prix);
+    }
+
+    @Override
+    public Recette getRecette() {
+        return recette;
     }
 }

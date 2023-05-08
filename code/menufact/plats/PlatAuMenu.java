@@ -8,8 +8,9 @@ public class PlatAuMenu implements IPlat {
     private int code;
     private String description;
     private double prix;
-
     private Recette recette;
+
+
 
     /***********************************
     --Constructeur
@@ -62,7 +63,10 @@ public class PlatAuMenu implements IPlat {
     public void setPrix(double prix) {
         this.prix = prix;
     }
+
+    @Override
     public Recette getRecette() {
         return recette;
     }
+
 }

@@ -1,17 +1,25 @@
 package menufact;
 
-import menufact.plats.CommanderEtat;
+import ingredients.QuantiteIngredient;
+import inventaire.Inventaire;
 import menufact.plats.EventListener; // Make sure to import the correct EventListener
 import menufact.plats.PlatChoisi;
-import menufact.plats.PreparationEtat;
 
 public class Chef implements EventListener {
     public Chef() {
     }
 
     @Override
-    public void update(String eventType, PlatChoisi zePlat) {
-        System.out.println("Chef: A new plat has been added to the facture. Let's prepare it!");
+    public void update(String eventType, PlatChoisi zePlat, Inventaire inventaire) {
+        System.out.println("Chef: Merci de me notifier de la commande BOY");
+
+        QuantiteIngredient ingredients[] = zePlat.getPlat().getRecette().getQuantiteIngredient();
+
+        for (QuantiteIngredient ingredient : ingredients) {
+            //ingredient.getQuantite() > inventaire.get
+        }
+
+
         System.out.println(zePlat.getEtat().onPreparation());
         System.out.println(zePlat.getEtat().onTermine());
         System.out.println(zePlat.getEtat().onServi());

@@ -2,13 +2,11 @@ package menufact;
 
 import ingredients.*;
 import ingredients.exceptions.IngredientException;
+import inventaire.Inventaire;
 import menufact.facture.exceptions.FactureException;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
-import menufact.plats.PlatAuMenu;
-import menufact.plats.PlatChoisi;
-import menufact.plats.PlatSante;
-import menufact.plats.Recette;
+import menufact.plats.*;
 
 public class TestMenuFact03 {
 
@@ -25,9 +23,12 @@ public class TestMenuFact03 {
     private PlatSante ps4;
     private PlatSante ps5;
 
-
+    private FactoryIngredient factory = new FactoryIngredient();
     private static Menu m1;
     private static Menu m2;
+
+
+
 
     private static Facture f1 = new Facture("Ma facture");
 
@@ -55,15 +56,36 @@ public class TestMenuFact03 {
 
 
         c1 = new Client(1,"Mr Client","1234567890");
+        Inventaire inventaire = Inventaire.getInstance();
+        Ingredient brocoli = factory.nouveauIngredient("Brocoli", "Vert", TypeIngredient.LEGUME);
+        Ingredient boeuf = factory.nouveauIngredient("Boeuf", "Angus", TypeIngredient.VIANDE);
+        Legume legume = new Legume();
+        QuantiteIngredient boeuf10 = null;
+        QuantiteIngredient brocoli50 = null;
+        QuantiteIngredient boeuf1 = null;
+        QuantiteIngredient brocoli2 = null;
+        try {
+             boeuf10 = new QuantiteIngredient(boeuf, 10);
+             brocoli50 = new QuantiteIngredient(brocoli, 50);
+
+        }
+        catch (IngredientException ingredientException){
+
+        }
+        inventaire.ajouter(boeuf10);
+        inventaire.ajouter(brocoli50);
+
+
+
+
+
+
+
+
+
     }
     public static void main(String[] args) {
         TestMenuFact03 t = new TestMenuFact03();
-
-
-
-
-
-
 
         t.test1_AffichePlatsAuMenu();
         t. test2_AffichePlatsSante();
@@ -140,13 +162,21 @@ public class TestMenuFact03 {
             System.out.println(me.getMessage());
         }
 
-
-
+        try {
+            t.test11_Inventaire();
+        } catch (IngredientException fe)
+        {
+            System.out.println(fe.getMessage());
+        } catch (MenuException e) {
+            System.out.println(e.getMessage());
+        }
 
 
         System.out.println("FIN DE TOUS LES TESTS...");
 
         System.out.println(f1.genererFacture());
+
+
     }
 
     private void test1_AffichePlatsAuMenu()
@@ -359,12 +389,12 @@ public class TestMenuFact03 {
 
         FactoryIngredient factory = new FactoryIngredient();
         Ingredient i1 = factory.nouveauIngredient("Steak", "Angus", TypeIngredient.VIANDE);
-        ListeIngredient l1;
-        l1 = new ListeIngredient(i1, 100);
+        QuantiteIngredient l1;
+        l1 = new QuantiteIngredient(i1, 100);
 
         Ingredient i2 = factory.nouveauIngredient("Brocoli", "Vert", TypeIngredient.LEGUME);
-        ListeIngredient l2;
-        l2 = new ListeIngredient(i2, 50);
+        QuantiteIngredient l2;
+        l2 = new QuantiteIngredient(i2, 50);
 
 
 
@@ -372,5 +402,37 @@ public class TestMenuFact03 {
         r1.ajouterIngredient(l1);
         r1.ajouterIngredient(l2);
         System.out.println(r1);
+
+
+    }
+    private void test11_Inventaire() throws IngredientException, MenuException{
+        System.out.println("\n==================================");
+        System.out.println("===test10_AffichageRecette");
+        System.out.println("==================================");
+
+        FactoryIngredient factory = new FactoryIngredient();
+        Ingredient boeuf = factory.nouveauIngredient("Boeuf", "Angus", TypeIngredient.VIANDE);
+        QuantiteIngredient boeuf1;
+        boeuf1 = new QuantiteIngredient(boeuf, 1);
+
+        Ingredient brocoli = factory.nouveauIngredient("Brocoli", "Vert", TypeIngredient.LEGUME);
+        QuantiteIngredient brocoli5;
+        brocoli5 = new QuantiteIngredient(brocoli, 5);
+
+
+
+
+        Recette r1 = new Recette();
+        r1.ajouterIngredient(boeuf1);
+        r1.ajouterIngredient(brocoli5);
+
+        IPlat iplat = new PlatAuMenu(2, "Steak au broco", 20);
+        PlatChoisi platChoisi = new PlatChoisi(iplat, 2);
+
+
+
+        System.out.println(r1);
+
+
     }
 }

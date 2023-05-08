@@ -1,7 +1,6 @@
 package ingredientsTests;
 
 import ingredients.Ingredient;
-import ingredients.IngredientInventaire;
 import ingredients.Laitier;
 import static org.junit.jupiter.api.Assertions.*;
 

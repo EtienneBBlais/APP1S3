@@ -1,4 +1,6 @@
 package menufact.plats;
+import inventaire.Inventaire;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -23,10 +25,10 @@ public class EventManager {
         users.remove(listener);
     }
 
-    public void notify(String eventType, PlatChoisi zePlat) {
+    public void notify(String eventType, PlatChoisi zePlat, Inventaire inventaire) {
         List<EventListener> users = listeners.get(eventType);
         for (EventListener listener : users) {
-            listener.update(eventType, zePlat);
+            listener.update(eventType, zePlat, inventaire);
         }
     }
 }

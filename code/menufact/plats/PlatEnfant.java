@@ -2,10 +2,12 @@ package menufact.plats;
 
 public class PlatEnfant extends PlatDecorator {
     private double proportion;
+    private Recette recette;
 
     public PlatEnfant(IPlat plat, double proportion) {
         super(plat);
         this.proportion = proportion;
+        recette = new Recette();
     }
 
     public double getProportion() {
@@ -47,5 +49,10 @@ public class PlatEnfant extends PlatDecorator {
     @Override
     public void setPrix(double prix) {
         plat.setPrix(prix);
+    }
+
+    @Override
+    public Recette getRecette() {
+        return recette;
     }
 }
