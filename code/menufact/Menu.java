@@ -48,7 +48,7 @@ public class Menu {
 
     @Override
     public String toString() {
-        return "menufact.Menu{" +
+        return "Menu--------------------\n" +
                 "description='" + description + '\'' +
                 ", courant=" + courant +
                 ", plat=" + "\n" + plat +
