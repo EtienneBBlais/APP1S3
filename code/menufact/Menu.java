@@ -1,6 +1,7 @@
 package menufact;
 
 import menufact.exceptions.MenuException;
+import menufact.plats.IPlat;
 import menufact.plats.PlatAuMenu;
 
 import java.util.ArrayList;
@@ -8,13 +9,13 @@ import java.util.ArrayList;
 public class Menu {
     private String description;
     private int courant;
-    private ArrayList<PlatAuMenu> plat = new ArrayList<PlatAuMenu>();
+    private ArrayList<IPlat> plat = new ArrayList<IPlat>();
 
     public Menu(String description) {
         this.description = description;
     }
 
-    void ajoute (PlatAuMenu p)
+    void ajoute (IPlat p)
     {
         plat.add(p);
     }
@@ -24,7 +25,7 @@ public class Menu {
         courant = i;
     }
 
-    public PlatAuMenu platCourant()
+    public IPlat platCourant()
     {
         return plat.get(courant);
     }
