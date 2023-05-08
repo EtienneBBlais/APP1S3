@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Modification facture, overload == platAuMenu, platSante, platEnfant">
+    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Ajout test unitaire menuFact">
+      <change afterPath="$PROJECT_DIR$/test/menuFactTests/MenuFactControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatAuMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatAuMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/menuFactTests/MenuFactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/menuFactTests/MenuFactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683569314903</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ajout test unitaire menuFact">
+      <created>1683572969941</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1683572969941</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,18 +275,8 @@
     <MESSAGE value="Ajout du mvc" />
     <MESSAGE value="Test unitaire pour les ingredient fini" />
     <MESSAGE value="Modification facture, overload == platAuMenu, platSante, platEnfant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification facture, overload == platAuMenu, platSante, platEnfant" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/test/menuFactTests/MenuFactTest.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Ajout test unitaire menuFact" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout test unitaire menuFact" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

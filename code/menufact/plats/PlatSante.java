@@ -67,6 +67,18 @@ public class PlatSante extends PlatDecorator {
         return gras;
     }
 
+    public void setKcal(double kcal){
+        this.kcal = kcal;
+    }
+
+    public void setChol(double chol){
+        this.chol = chol;
+    }
+
+    public void setGras(double gras) {
+        this.gras = gras;
+    }
+
     @Override
     public int getCode() {
         return plat.getCode();
