@@ -19,7 +19,7 @@ public class MenuFactView {
         System.out.println(menu);
     }
 
-    public void afficherPlat(PlatAuMenu plat){
+    public void afficherPlat(IPlat plat){
         System.out.println(plat);
     }
 }
