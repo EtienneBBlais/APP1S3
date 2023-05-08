@@ -42,12 +42,11 @@ public class TestMenuFact03 {
         p4 = new PlatAuMenu(3,"PlatAuMenu3",40);
         p5 = new PlatAuMenu(4,"PlatAuMenu4",50);
 
-
-        ps1 = new PlatSante(10,"PlatSante0",10,11,11,11);
-        ps2 = new PlatSante(11,"PlatSante1",20,11,11,11);
-        ps3 = new PlatSante(12,"PlatSante2",30,11,11,11);
-        ps4 = new PlatSante(13,"PlatSante3",40,11,11,11);
-        ps5 = new PlatSante(14,"PlatSante4",50,11,11,11);
+        PlatSante ps1 = new PlatSante(p1, 11, 11, 11);
+        PlatSante ps2 = new PlatSante(p2, 11, 11, 11);
+        PlatSante ps3 = new PlatSante(p3, 11, 11, 11);
+        PlatSante ps4 = new PlatSante(p4, 11, 11, 11);
+        PlatSante ps5 = new PlatSante(p5, 11, 11, 11);
 
 
         m1 = new Menu("menufact.Menu 1");

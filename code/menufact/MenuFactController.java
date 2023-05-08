@@ -1,6 +1,7 @@
 package menufact;
 
 import menufact.exceptions.MenuException;
+import menufact.plats.IPlat;
 import menufact.plats.PlatAuMenu;
 
 public class MenuFactController {
@@ -18,10 +19,10 @@ public class MenuFactController {
     --Fonction sur les plats
      ***************************/
 
-    public PlatAuMenu getPlatCourant(){
+    public IPlat getPlatCourant(){
         return menuFact.menuCourant().platCourant();
     }
-    public void afficherPlat(PlatAuMenu plat){
+    public void afficherPlat(IPlat plat){
         menuFactView.afficherPlat(plat);
     }
 
