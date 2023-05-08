@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Ajout du mvc">
-      <change afterPath="$PROJECT_DIR$/test/ingredientsTests/EpiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/ingredientsTests/LaitierTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ingredients/Epice.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/Epice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/FactoryIngredientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/FactoryIngredientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/FruitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/FruitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/IngredientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/IngredientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/LegumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/LegumeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/ListeIngredientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/ListeIngredientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/ViandeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/ViandeTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Test unitaire pour les ingredient fini" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,7 +200,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683507211424</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test unitaire pour les ingredient fini">
+      <created>1683557899950</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683557899950</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test unitaire pour les ingredient fini">
+      <created>1683557959424</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1683557959424</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +237,8 @@
     <MESSAGE value="Ajout de la factory" />
     <MESSAGE value="Ajout des test de la factory" />
     <MESSAGE value="Ajout du mvc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout du mvc" />
+    <MESSAGE value="Test unitaire pour les ingredient fini" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test unitaire pour les ingredient fini" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

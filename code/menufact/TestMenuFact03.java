@@ -202,6 +202,8 @@ public class TestMenuFact03 {
         System.out.println("=== test4_AjoutPlatsAuMenu");
         System.out.println("==================================");
         System.out.println("=== Ajout de plats au menu 1");
+        menuController.positionMenu(0);
+        menuController.ajouterPlat(p1);
         m1.ajoute(p1);
         m1.ajoute(p2);
         m1.ajoute(ps1);
