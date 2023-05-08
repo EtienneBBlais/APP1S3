@@ -30,6 +30,10 @@ public class Inventaire {
         }
         return instance;
     }
+    public ArrayList<QuantiteIngredient> getQuantiteIngredient() {
+        return lesIngredients;
+    }
+
 
     //public get
 

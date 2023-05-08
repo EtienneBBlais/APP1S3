@@ -8,4 +8,5 @@ public interface IPlat {
     double getPrix();
     void setPrix(double prix);
     Recette getRecette();
+    void setRecette(Recette recette);
 }
