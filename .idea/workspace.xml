@@ -4,33 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Modification facture, overload == platAuMenu, platSante, platEnfant">
-      <change afterPath="$PROJECT_DIR$/test/menuFactTests/MenuFactTest.java" afterDir="false" />
+    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Ajout de la factory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-<<<<<<< HEAD
-      <change beforePath="$PROJECT_DIR$/code/inventaire/Inventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/inventaire/Inventaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/menufact/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Chef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/IPlat.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/IPlat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/Chef.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/Chef.class" afterDir="false" />
-=======
-      <change beforePath="$PROJECT_DIR$/code/menufact/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFactView.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFactView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/facture/Facture.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/facture/Facture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatEnfant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatEnfant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/facture/Facture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/facture/Facture.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatAuMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatAuMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatEnfant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatEnfant.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatSante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatSante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/exceptions/IngredientExceptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/exceptions/IngredientExceptionTest.java" afterDir="false" />
->>>>>>> 5870d985c40eb9fb0b7f1967f539f8012160207e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,9 +31,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2PINm2eLbyWb2kgLxEqsNRNgvrl" />
   <component name="ProjectLevelVcsManager">
@@ -83,7 +61,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -95,14 +73,39 @@
       <recent name="C:\Users\emile\Documents\Session 3\APP1\Travail\APP1S3\code\ingredients" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="menuFactTests" />
       <recent name="ingredientsTests" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="menufact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in APP1S3">
+  <component name="RunManager" selected="Application.TestMenuFact03">
+    <configuration name="TestMenuFact01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="menufact.TestMenuFact01" />
+      <module name="APP1S3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="menufact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMenuFact02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="menufact.TestMenuFact02" />
+      <module name="APP1S3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="menufact.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestMenuFact03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="menufact.TestMenuFact03" />
       <module name="APP1S3" />
@@ -116,30 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in APP1S3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="APP1S3" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IngredientExceptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="APP1S3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ingredientsTests.exceptions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ingredientsTests.exceptions" />
-      <option name="MAIN_CLASS_NAME" value="ingredientsTests.exceptions.IngredientExceptionTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FactoryIngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="APP1S3" />
       <extension name="coverage">
         <pattern>
@@ -148,13 +128,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ingredientsTests" />
-      <option name="MAIN_CLASS_NAME" value="ingredientsTests.IngredientTest" />
+      <option name="MAIN_CLASS_NAME" value="ingredientsTests.FactoryIngredientTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LegumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FactoryIngredientTest.nouveauIngredient_epice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="APP1S3" />
       <extension name="coverage">
         <pattern>
@@ -163,32 +143,20 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ingredientsTests" />
-      <option name="MAIN_CLASS_NAME" value="ingredientsTests.LegumeTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="APP1S3" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="APP1S3" />
-      <option name="filePath" />
+      <option name="MAIN_CLASS_NAME" value="ingredientsTests.FactoryIngredientTest" />
+      <option name="METHOD_NAME" value="nouveauIngredient_epice" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in APP1S3" />
-        <item itemvalue="JUnit.IngredientExceptionTest" />
         <item itemvalue="Application.TestMenuFact03" />
-        <item itemvalue="JUnit.LegumeTest" />
-        <item itemvalue="JUnit.IngredientTest" />
+        <item itemvalue="Application.TestMenuFact02" />
+        <item itemvalue="JUnit.FactoryIngredientTest" />
+        <item itemvalue="JUnit.FactoryIngredientTest.nouveauIngredient_epice" />
+        <item itemvalue="Application.TestMenuFact01" />
       </list>
     </recent_temporary>
   </component>
@@ -202,13 +170,10 @@
       <updated>1683140790432</updated>
       <workItem from="1683140791433" duration="3429000" />
       <workItem from="1683146882856" duration="5719000" />
-<<<<<<< HEAD
       <workItem from="1683326357655" duration="20000" />
       <workItem from="1683326449732" duration="20379000" />
       <workItem from="1683551026501" duration="4726000" />
       <workItem from="1683558146181" duration="14526000" />
-=======
->>>>>>> 5870d985c40eb9fb0b7f1967f539f8012160207e
     </task>
     <task id="LOCAL-00001" summary="ii">
       <created>1683225294142</created>
@@ -224,42 +189,7 @@
       <option name="project" value="LOCAL" />
       <updated>1683227216794</updated>
     </task>
-    <task id="LOCAL-00003" summary="Ajout des test de la factory">
-      <created>1683316374316</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1683316374316</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Ajout du mvc">
-      <created>1683507211424</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1683507211424</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Test unitaire pour les ingredient fini">
-      <created>1683557899950</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1683557899950</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Test unitaire pour les ingredient fini">
-      <created>1683557959424</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1683557959424</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Test unitaire pour les ingredient fini">
-      <created>1683558194285</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1683558194285</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,24 +210,20 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="ii" />
     <MESSAGE value="Ajout de la factory" />
-    <MESSAGE value="Ajout des test de la factory" />
-    <MESSAGE value="Ajout du mvc" />
-    <MESSAGE value="Test unitaire pour les ingredient fini" />
-    <MESSAGE value="Modification facture, overload == platAuMenu, platSante, platEnfant" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modification facture, overload == platAuMenu, platSante, platEnfant" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout de la factory" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code/menufact/Chef.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/code/menufact/TestMenuFact03.java</url>
+          <line>429</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/code/menufact/TestMenuFact03.java</url>
-          <line>392</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/code/menufact/Chef.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -305,5 +231,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Chef_java$TestMenuFact03.ic" NAME="TestMenuFact03 Coverage Results" MODIFIED="1683574300981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>menufact.*</FILTER>
+    </SUITE>
   </component>
 </project>

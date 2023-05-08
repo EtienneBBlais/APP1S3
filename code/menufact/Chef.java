@@ -20,15 +20,16 @@ public class Chef implements EventListener {
 
         try {
             for (QuantiteIngredient ingredientInventaire : inventaire.getQuantiteIngredient()) {
-                for (QuantiteIngredient ingredientRecette : ingredients) {
-                    if (ingredientRecette.getIngredient() == ingredientInventaire.getIngredient()) {
-                        if (ingredientRecette.getQuantite() <= ingredientInventaire.getQuantite() ) {
-                            ingredientInventaire.setQuantite(ingredientInventaire.getQuantite() - ingredientRecette.getQuantite());
-                            System.out.println("\nOn enleve des aliments de linventiareeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n");
-                        }
-                        else {
-                            System.out.println(zePlat.getEtat().onPuDIngredient());
-                            break;
+                if (ingredientInventaire != null) {
+                    for (QuantiteIngredient ingredientRecette : ingredients) {
+                        if (ingredientRecette != null && ingredientInventaire.getIngredient() == ingredientRecette.getIngredient()) {
+                            if (ingredientRecette.getQuantite() <= ingredientInventaire.getQuantite()) {
+                                ingredientInventaire.setQuantite(ingredientInventaire.getQuantite() - ingredientRecette.getQuantite());
+                                System.out.println("\nOn enleve des aliments de linventiareeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n");
+                            } else {
+                                System.out.println(zePlat.getEtat().onPuDIngredient());
+                                break;
+                            }
                         }
                     }
                 }
@@ -42,6 +43,7 @@ public class Chef implements EventListener {
         System.out.println(zePlat.getEtat().onTermine());
         System.out.println(zePlat.getEtat().onServi());
     }
+
 
 
     @Override

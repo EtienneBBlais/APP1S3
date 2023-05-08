@@ -69,81 +69,81 @@ public class TestMenuFact03 {
     }
     public static void main(String[] args) {
         TestMenuFact03 t = new TestMenuFact03();
+//
+//        t.test1_AffichePlatsAuMenu();
+//        t. test2_AffichePlatsSante();
+//        try {
+//            t.test3_AjoutMenu();
+//        } catch (MenuException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//        t.test4_AjoutPlatsAuMenu();
+//
+//
+//        try {
+//            t.test5_DeplacementMenuAvancer();
+//        } catch (MenuException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//        try {
+//            t.test6_DeplacementMenuReculer();
+//        } catch (MenuException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//        try {
+//            t.test7_CreerFacture();
+//        } catch (FactureException e) {
+//            System.out.println(e.getMessage());
+//        }
+//
+//
+//        t.test8_AjouterClientFacture();
+//
+//        try {
+//            t.test8_AjouterPlatsFacture(1);
+//        } catch (FactureException fe)
+//        {
+//            System.out.println(fe.getMessage());
+//        }
+//        catch (MenuException me)
+//        {
+//            System.out.println(me);
+//        }
+//
+//        t.test9_PayerFacture();
 
-        t.test1_AffichePlatsAuMenu();
-        t. test2_AffichePlatsSante();
-        try {
-            t.test3_AjoutMenu();
-        } catch (MenuException e) {
-            System.out.println(e.getMessage());
-        }
-
-        t.test4_AjoutPlatsAuMenu();
-
-
-        try {
-            t.test5_DeplacementMenuAvancer();
-        } catch (MenuException e) {
-            System.out.println(e.getMessage());
-        }
-
-        try {
-            t.test6_DeplacementMenuReculer();
-        } catch (MenuException e) {
-            System.out.println(e.getMessage());
-        }
-
-        try {
-            t.test7_CreerFacture();
-        } catch (FactureException e) {
-            System.out.println(e.getMessage());
-        }
-
-
-        t.test8_AjouterClientFacture();
-
-        try {
-            t.test8_AjouterPlatsFacture(1);
-        } catch (FactureException fe)
-        {
-            System.out.println(fe.getMessage());
-        }
-        catch (MenuException me)
-        {
-            System.out.println(me);
-        }
-
-        t.test9_PayerFacture();
-
-        try {
-            t.test8_AjouterPlatsFacture(1);
-        } catch (FactureException fe)
-        {
-            System.out.println(fe.getMessage());
-        }
-        catch (MenuException me)
-        {
-            System.out.println(me);
-        }
-
-        try {
-            f1.ouvrir();
-        } catch (FactureException fe)
-        {
-            System.out.println(fe.getMessage());
-        }
-
-        try {
-            t.test10_AffichageRecette();
-        }
-        catch (IngredientException ie)
-        {
-            System.out.println(ie.getMessage());
-        }
-        catch (MenuException me)
-        {
-            System.out.println(me.getMessage());
-        }
+//        try {
+//            t.test8_AjouterPlatsFacture(1);
+//        } catch (FactureException fe)
+//        {
+//            System.out.println(fe.getMessage());
+//        }
+//        catch (MenuException me)
+//        {
+//            System.out.println(me);
+//        }
+//
+//        try {
+//            f1.ouvrir();
+//        } catch (FactureException fe)
+//        {
+//            System.out.println(fe.getMessage());
+//        }
+//
+//        try {
+//            t.test10_AffichageRecette();
+//        }
+//        catch (IngredientException ie)
+//        {
+//            System.out.println(ie.getMessage());
+//        }
+//        catch (MenuException me)
+//        {
+//            System.out.println(me.getMessage());
+//        }
 
         try {
             t.test11_Inventaire();
@@ -425,8 +425,10 @@ public class TestMenuFact03 {
         PlatChoisi platChoisi = new PlatChoisi(iplat, 2);
 
         Facture facture = new Facture("ceci est une facture");
+        facture.setInventaire(inventaire);
         facture.setChef(chef);
-        facture.ajoutePlat(platChoisi, inventaire);
+        facture.ajoutePlat(platChoisi);
+
 
 
 
