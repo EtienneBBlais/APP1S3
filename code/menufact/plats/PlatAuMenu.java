@@ -1,6 +1,6 @@
 package menufact.plats;
 
-public class PlatAuMenu {
+public class PlatAuMenu implements IPlat {
 
     /************************************
     --Attribut

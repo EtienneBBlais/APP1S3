@@ -1,21 +1,18 @@
 package menufact.plats;
 
-import menufact.plats.PlatAuMenu;
-
-public class PlatSante extends PlatAuMenu {
+public class PlatSante extends PlatDecorator {
     private double kcal;
     private double chol;
     private double gras;
 
-    public PlatSante(int code, String description, double prix, double kcal, double chol, double gras) {
-        super(code, description, prix);
+    public PlatSante(IPlat plat, double kcal, double chol, double gras) {
+        super(plat);
         this.kcal = kcal;
         this.chol = chol;
         this.gras = gras;
     }
 
-    public PlatSante() {
-    }
+
 
     @Override
     public String toString() {
@@ -36,5 +33,35 @@ public class PlatSante extends PlatAuMenu {
 
     public double getGras() {
         return gras;
+    }
+
+    @Override
+    public int getCode() {
+        return plat.getCode();
+    }
+
+    @Override
+    public void setCode(int code) {
+        plat.setCode(code);
+    }
+
+    @Override
+    public String getDescription() {
+        return plat.getDescription();
+    }
+
+    @Override
+    public void setDescription(String description) {
+        plat.setDescription(description);
+    }
+
+    @Override
+    public double getPrix() {
+        return plat.getPrix();
+    }
+
+    @Override
+    public void setPrix(double prix) {
+        plat.setPrix(prix);
     }
 }

@@ -23,10 +23,10 @@ public class EventManager {
         users.remove(listener);
     }
 
-    public void notify(String eventType) {
+    public void notify(String eventType, PlatChoisi zePlat) {
         List<EventListener> users = listeners.get(eventType);
         for (EventListener listener : users) {
-            listener.update(eventType);
+            listener.update(eventType, zePlat);
         }
     }
 }

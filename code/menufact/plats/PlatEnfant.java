@@ -1,13 +1,10 @@
 package menufact.plats;
 
-public class PlatEnfant extends PlatAuMenu{
+public class PlatEnfant extends PlatDecorator {
     private double proportion;
 
-    public PlatEnfant() {
-    }
-
-    public PlatEnfant(int code, String description, double prix, double proportion) {
-        super(code, description, prix);
+    public PlatEnfant(IPlat plat, double proportion) {
+        super(plat);
         this.proportion = proportion;
     }
 
@@ -20,5 +17,35 @@ public class PlatEnfant extends PlatAuMenu{
         return "PlatEnfant{" +
                 "proportion=" + proportion +
                 "} " + super.toString();
+    }
+
+    @Override
+    public int getCode() {
+        return plat.getCode();
+    }
+
+    @Override
+    public void setCode(int code) {
+        plat.setCode(code);
+    }
+
+    @Override
+    public String getDescription() {
+        return plat.getDescription();
+    }
+
+    @Override
+    public void setDescription(String description) {
+        plat.setDescription(description);
+    }
+
+    @Override
+    public double getPrix() {
+        return plat.getPrix();
+    }
+
+    @Override
+    public void setPrix(double prix) {
+        plat.setPrix(prix);
     }
 }
