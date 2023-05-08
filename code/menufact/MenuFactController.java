@@ -1,8 +1,11 @@
 package menufact;
 
 import menufact.exceptions.MenuException;
+import menufact.facture.Facture;
+import menufact.facture.exceptions.FactureException;
 import menufact.plats.IPlat;
 import menufact.plats.PlatAuMenu;
+import menufact.plats.PlatChoisi;
 
 public class MenuFactController {
 
@@ -48,7 +51,7 @@ public class MenuFactController {
         }
     }
 
-    public void ajouterPlat(PlatAuMenu plat){
+    public void ajouterPlat(IPlat plat){
         menuFact.menuCourant().ajoute(plat);
     }
 
@@ -56,8 +59,11 @@ public class MenuFactController {
         menuFact.menuCourant().position(position);
     }
 
+    /****************************
+    --Fonction sur les menus
+     ***************************/
     public void ajouterMenu(Menu menu){
-        menuFact.ajoute(menu);
+        menuFact.ajouteMenu(menu);
     }
 
     public void afficherMenuCourant(){
@@ -66,7 +72,7 @@ public class MenuFactController {
 
     public void menuSuivant() throws MenuException {
         try {
-            menuFact.positionSuivante();
+            menuFact.positionSuivanteMenu();
         }
         catch (MenuException me){
             throw me;
@@ -75,18 +81,62 @@ public class MenuFactController {
 
     public void menuPrecedent() throws MenuException {
         try {
-            menuFact.positionPrecedente();
+            menuFact.positionPrecedenteMenu();
         }
         catch (MenuException me){
             throw me;
         }
     }
-
     public void positionMenu(int position){
-        menuFact.position(position);
+        menuFact.positionMenu(position);
     }
 
-    public void updateView(){
+    /****************************
+    --Fonction sur les factures
+     ***************************/
+    public void ajouterPlatFacture(PlatChoisi plat) throws FactureException{
+        try {
+            menuFact.FactureCourant().ajoutePlat(plat);
+        }
+        catch(FactureException fe){
+            throw fe;
+        }
+    }
 
+    public void ajouterFacture(Facture facture){
+        menuFact.ajouteFacture(facture);
+    }
+
+    public void afficherFactureCourant(){
+        menuFactView.afficherFacture(menuFact.FactureCourant());
+    }
+
+    public void factureSuivant() throws FactureException {
+        try {
+            menuFact.positionSuivanteFacture();
+        }
+        catch (FactureException fe){
+            throw fe;
+        }
+    }
+
+    public void facturePrecedent() throws FactureException {
+        try {
+            menuFact.positionPrecedenteFacture();
+        }
+        catch (FactureException fe){
+            throw fe;
+        }
+    }
+    public void positionFacture(int position){
+        menuFact.positionFacture(position);
+    }
+
+    public void payerFacture(){
+        menuFact.FactureCourant().payer();
+    }
+
+    public void associerClient(Client client){
+        menuFact.FactureCourant().associerClient(client);
     }
 }

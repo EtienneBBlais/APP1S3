@@ -1,5 +1,6 @@
 package menufact.facture;
 
+import ingredients.Ingredient;
 import inventaire.Inventaire;
 import menufact.Chef;
 import menufact.Client;
@@ -26,6 +27,8 @@ public class Facture {
     private ArrayList<PlatChoisi> platchoisi = new ArrayList<PlatChoisi>();
     private int courant;
     private Client client;
+
+    private Inventaire inventaire;
 
 
     /**********************Constantes ************/
@@ -131,7 +134,7 @@ public class Facture {
      * @param p un plat choisi
      * @throws FactureException Seulement si la facture est OUVERTE
      */
-    public void ajoutePlat(PlatChoisi p, Inventaire inventaire) throws FactureException {
+    public void ajoutePlat(PlatChoisi p) throws FactureException {
         if (etat == FactureEtat.OUVERTE) {
             //events.subscribe("nouveauPlat", new NouveauPlatListener(platchoisi.toString()));
             events.notify("nouveauPlat", p, inventaire);
@@ -165,7 +168,7 @@ public class Facture {
      */
     @Override
     public String toString() {
-        return "menufact.facture.Facture{" +
+        return "Facture\n{" +
                 "date=" + date +
                 ", description='" + description + '\'' +
                 ", etat=" + etat +
@@ -207,6 +210,14 @@ public class Facture {
         factureGenere += "          Le total est de:   " + total() + "\n";
 
         return factureGenere;
+    }
+
+    public void setInventaire(Inventaire inventaire){
+        this.inventaire = inventaire;
+    }
+
+    public Inventaire getInventaire(){
+        return inventaire;
     }
 }
 

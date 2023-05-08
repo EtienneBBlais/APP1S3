@@ -1,5 +1,7 @@
 package menufact.plats;
 
+import menufact.Menu;
+
 public class PlatAuMenu implements IPlat {
 
     /************************************
@@ -35,6 +37,27 @@ public class PlatAuMenu implements IPlat {
                 ", description='" + description + '\'' +
                 ", prix=" + prix +
                 "}\n";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o != this) {
+            return false;
+        }
+        if (!(o instanceof PlatAuMenu)) {
+            return false;
+        }
+        PlatAuMenu c = (PlatAuMenu) o;
+        if (c.code != this.code) {
+            return false;
+        }
+        if (c.prix != this.prix) {
+            return false;
+        }
+        if (c.description != this.description) {
+            return false;
+        }
+        return true;
     }
 
     /***************************************
