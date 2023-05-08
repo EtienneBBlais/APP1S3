@@ -101,4 +101,9 @@ public class PlatSante extends PlatDecorator {
     public Recette getRecette() {
         return recette;
     }
+
+    @Override
+    public void setRecette(Recette recette) {
+        this.recette = recette;
+    }
 }

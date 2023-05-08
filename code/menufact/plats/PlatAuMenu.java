@@ -90,5 +90,8 @@ public class PlatAuMenu implements IPlat {
     public Recette getRecette() {
         return recette;
     }
+    public void setRecette(Recette recette) {
+        this.recette = recette;
+    }
 
 }
