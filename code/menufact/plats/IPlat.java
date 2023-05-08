@@ -7,4 +7,5 @@ public interface IPlat {
     void setDescription(String description);
     double getPrix();
     void setPrix(double prix);
+    Recette getRecette();
 }

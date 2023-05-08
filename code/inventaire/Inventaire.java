@@ -1,7 +1,6 @@
 package inventaire;
 
-import ingredients.Ingredient;
-import ingredients.ListeIngredient;
+import ingredients.QuantiteIngredient;
 
 import java.util.ArrayList;
 
@@ -11,7 +10,7 @@ public class Inventaire {
     --Attributs
      ************************/
     private static Inventaire instance;
-    private ArrayList<ListeIngredient> lesIngredients = new ArrayList<ListeIngredient>();
+    private ArrayList<QuantiteIngredient> lesIngredients = new ArrayList<QuantiteIngredient>();
 
     /**************************
     --Constructeur
@@ -20,7 +19,7 @@ public class Inventaire {
 
     }
 
-    public void ajouter (ListeIngredient ingredient)
+    public void ajouter(QuantiteIngredient ingredient)
     {
         lesIngredients.add(ingredient);
     }
@@ -31,5 +30,7 @@ public class Inventaire {
         }
         return instance;
     }
+
+    //public get
 
 }

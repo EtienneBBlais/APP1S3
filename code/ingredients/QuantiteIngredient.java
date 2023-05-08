@@ -1,7 +1,7 @@
 package ingredients;
 
 import ingredients.exceptions.IngredientException;
-public class ListeIngredient {
+public class QuantiteIngredient {
 
     /*******************************
     --Attribut
@@ -12,7 +12,7 @@ public class ListeIngredient {
     /********************************
     --Constructeur
      *******************************/
-    public ListeIngredient(Ingredient ing, int quantite) throws IngredientException{
+    public QuantiteIngredient(Ingredient ing, int quantite) throws IngredientException{
         ingredient = ing;
         if (quantite < 0)
             throw new IngredientException("Il n'est pas possible d'avoir une quantité negative");

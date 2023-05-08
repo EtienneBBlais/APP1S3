@@ -1,5 +1,6 @@
 package menufact.facture;
 
+import inventaire.Inventaire;
 import menufact.Chef;
 import menufact.Client;
 import menufact.facture.exceptions.FactureException;
@@ -130,10 +131,10 @@ public class Facture {
      * @param p un plat choisi
      * @throws FactureException Seulement si la facture est OUVERTE
      */
-    public void ajoutePlat(PlatChoisi p) throws FactureException {
+    public void ajoutePlat(PlatChoisi p, Inventaire inventaire) throws FactureException {
         if (etat == FactureEtat.OUVERTE) {
             //events.subscribe("nouveauPlat", new NouveauPlatListener(platchoisi.toString()));
-            events.notify("nouveauPlat", p);
+            events.notify("nouveauPlat", p, inventaire);
             boolean platExists = false;
 
             for (PlatChoisi existingPlat : platchoisi) {

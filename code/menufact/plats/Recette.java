@@ -1,6 +1,6 @@
 package menufact.plats;
 
-import ingredients.ListeIngredient;
+import ingredients.QuantiteIngredient;
 import menufact.exceptions.MenuException;
 
 public class Recette{
@@ -10,20 +10,20 @@ public class Recette{
      ***************************/
     private final int capaciteIngredient = 5;
     private int taille;
-    private ListeIngredient[] liste;
+    private QuantiteIngredient[] liste;
 
     /****************************
     --Constructeur
      ***************************/
     public Recette(){
-        liste = new ListeIngredient[capaciteIngredient];
+        liste = new QuantiteIngredient[capaciteIngredient];
         taille = 0;
     }
 
     /****************************
     --Miscellaneous  function
      ***************************/
-    public void ajouterIngredient(ListeIngredient ingredient) throws MenuException{
+    public void ajouterIngredient(QuantiteIngredient ingredient) throws MenuException{
         if(taille >= capaciteIngredient){
             throw new MenuException("On depasse le nombre maximal d'ingredients");
         }
@@ -47,7 +47,7 @@ public class Recette{
     /****************************
     --Getter/Setter
      ***************************/
-    public ListeIngredient[] getListeIngredient() {
+    public QuantiteIngredient[] getQuantiteIngredient() {
         return liste;
     }
 }
