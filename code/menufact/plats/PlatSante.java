@@ -25,6 +25,36 @@ public class PlatSante extends PlatDecorator {
                 "} " + super.toString();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o != this) {
+            return false;
+        }
+        if (!(o instanceof PlatSante)) {
+            return false;
+        }
+        PlatSante c = (PlatSante) o;
+        if (c.getCode() != this.getCode()) {
+            return false;
+        }
+        if (c.getPrix() != this.getPrix()) {
+            return false;
+        }
+        if (c.getDescription() != this.getDescription()) {
+            return false;
+        }
+        if(c.getChol() != this.chol){
+            return false;
+        }
+        if(c.getGras() != this.gras){
+            return false;
+        }
+        if(c.getKcal() != this.kcal){
+            return false;
+        }
+        return true;
+    }
+
     public double getKcal() {
         return kcal;
     }

@@ -55,4 +55,24 @@ public class Menu {
                 ", plat=" + "\n" + plat +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o){
+        if(o != this){
+            return false;
+        }
+        if (!(o instanceof Menu)) {
+            return false;
+        }
+        Menu c = (Menu) o;
+        if(c.plat.size() != this.plat.size()){
+            return false;
+        }
+        for(int i = 0; i < this.plat.size(); i++){
+            if(c.plat.get(i) != this.plat.get(i)){
+                return false;
+            }
+        }
+        return true;
+    }
 }

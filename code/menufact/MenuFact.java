@@ -2,7 +2,11 @@ package menufact;
 
 import inventaire.Inventaire;
 import menufact.exceptions.MenuException;
+import menufact.facture.exceptions.FactureException;
+import menufact.facture.Facture;
 import menufact.plats.PlatAuMenu;
+
+import menufact.Chef;
 
 import java.util.ArrayList;
 
@@ -13,39 +17,85 @@ public class MenuFact {
 
     private Inventaire inventaire;
 
+    private Chef chef = new Chef();
+
     private ArrayList<Menu> menu = new ArrayList<Menu>();
+
+    private ArrayList<Facture> factures = new ArrayList<Facture>();
     //private Menu menu;
 
-    private int courant;
+    private int courantMenu;
 
-    void ajoute (Menu m)
+    private int courantFacture;
+
+    /*************************
+    --Fonction menu
+     ************************/
+
+    void ajouteMenu (Menu m)
     {
         menu.add(m);
     }
 
-    public void position(int i)
+    public void positionMenu(int i)
     {
-        courant = i;
+        courantMenu = i;
     }
 
     public Menu menuCourant()
     {
-        return menu.get(courant);
+        return menu.get(courantMenu);
     }
 
-    public void positionSuivante() throws MenuException
+    public void positionSuivanteMenu() throws MenuException
     {
-        if (courant+1 >= menu.size())
+        if (courantMenu+1 >= menu.size())
             throw new MenuException("On depasse le nombre maximale de menus.");
         else
-            courant++;
+            courantMenu++;
     }
 
-    public void positionPrecedente() throws MenuException
+    public void positionPrecedenteMenu() throws MenuException
     {
-        if (courant-1 < 0)
+        if (courantMenu-1 < 0)
             throw new MenuException("On depasse le nombre minimale de menu");
         else
-            courant--;
+            courantMenu--;
+    }
+
+    /****************************
+    --Fonction Facture
+     ***************************/
+
+    void ajouteFacture (Facture f)
+    {
+        f.setChef(chef);
+        factures.add(f);
+    }
+
+    public void positionFacture(int i)
+    {
+        courantFacture = i;
+    }
+
+    public Facture FactureCourant()
+    {
+        return factures.get(courantFacture);
+    }
+
+    public void positionSuivanteFacture() throws FactureException
+    {
+        if (courantFacture+1 >= menu.size())
+            throw new FactureException("On depasse le nombre maximale de facture.");
+        else
+            courantFacture++;
+    }
+
+    public void positionPrecedenteFacture() throws FactureException
+    {
+        if (courantFacture-1 < 0)
+            throw new FactureException("On depasse le nombre minimale de facture");
+        else
+            courantFacture--;
     }
 }

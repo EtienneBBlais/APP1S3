@@ -22,6 +22,30 @@ public class PlatEnfant extends PlatDecorator {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (o != this) {
+            return false;
+        }
+        if (!(o instanceof PlatEnfant)) {
+            return false;
+        }
+        PlatEnfant c = (PlatEnfant) o;
+        if (c.getCode() != this.getCode()) {
+            return false;
+        }
+        if (c.getPrix() != this.getPrix()) {
+            return false;
+        }
+        if (c.getDescription() != this.getDescription()) {
+            return false;
+        }
+        if(c.getProportion() != this.proportion){
+            return false;
+        }
+        return true;
+    }
+
+    @Override
     public int getCode() {
         return plat.getCode();
     }
