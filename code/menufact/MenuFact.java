@@ -4,9 +4,9 @@ import inventaire.Inventaire;
 import menufact.exceptions.MenuException;
 import menufact.facture.exceptions.FactureException;
 import menufact.facture.Facture;
-import menufact.plats.PlatAuMenu;
 
-import menufact.Chef;
+
+
 
 import java.util.ArrayList;
 
@@ -27,12 +27,20 @@ public class MenuFact {
     private int courantMenu;
 
     private int courantFacture;
+    /************************
+    --Constructeur
+     ***********************/
+    public MenuFact(){
+        courantMenu = 0;
+        courantFacture = 0;
+        inventaire = Inventaire.getInstance();
+    }
 
     /*************************
     --Fonction menu
      ************************/
 
-    void ajouteMenu (Menu m)
+    public void ajouteMenu (Menu m)
     {
         menu.add(m);
     }
@@ -67,7 +75,7 @@ public class MenuFact {
     --Fonction Facture
      ***************************/
 
-    void ajouteFacture (Facture f)
+    public void ajouteFacture (Facture f)
     {
         f.setChef(chef);
         factures.add(f);
@@ -85,7 +93,7 @@ public class MenuFact {
 
     public void positionSuivanteFacture() throws FactureException
     {
-        if (courantFacture+1 >= menu.size())
+        if (courantFacture+1 >= factures.size())
             throw new FactureException("On depasse le nombre maximale de facture.");
         else
             courantFacture++;

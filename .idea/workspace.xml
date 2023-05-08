@@ -5,23 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Modification facture, overload == platAuMenu, platSante, platEnfant">
-      <change afterPath="$PROJECT_DIR$/test/menuFactTests/MenuFactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/menufact/MenuFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFactController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFactView.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFactView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/facture/Facture.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/facture/Facture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatEnfant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatEnfant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/facture/Facture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/facture/Facture.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatAuMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatAuMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatEnfant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatEnfant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatSante.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/plats/PlatSante.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/exceptions/IngredientExceptionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/exceptions/IngredientExceptionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/menuFactTests/MenuFactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/menuFactTests/MenuFactTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +31,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2PINm2eLbyWb2kgLxEqsNRNgvrl" />
   <component name="ProjectLevelVcsManager">
@@ -130,21 +118,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IngredientTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="APP1S3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ingredientsTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ingredientsTests" />
-      <option name="MAIN_CLASS_NAME" value="ingredientsTests.IngredientTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LegumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="APP1S3" />
       <extension name="coverage">
@@ -155,6 +128,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="ingredientsTests" />
       <option name="MAIN_CLASS_NAME" value="ingredientsTests.LegumeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MenuFactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="APP1S3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="menuFactTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="menuFactTests" />
+      <option name="MAIN_CLASS_NAME" value="menuFactTests.MenuFactTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,10 +164,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in APP1S3" />
+        <item itemvalue="JUnit.MenuFactTest" />
         <item itemvalue="JUnit.IngredientExceptionTest" />
         <item itemvalue="Application.TestMenuFact03" />
         <item itemvalue="JUnit.LegumeTest" />
-        <item itemvalue="JUnit.IngredientTest" />
       </list>
     </recent_temporary>
   </component>
@@ -243,7 +231,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683558194285</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Modification facture, overload == platAuMenu, platSante, platEnfant">
+      <created>1683569228501</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683569228501</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Modification facture, overload == platAuMenu, platSante, platEnfant">
+      <created>1683569314903</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1683569314903</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +271,17 @@
     <MESSAGE value="Test unitaire pour les ingredient fini" />
     <MESSAGE value="Modification facture, overload == platAuMenu, platSante, platEnfant" />
     <option name="LAST_COMMIT_MESSAGE" value="Modification facture, overload == platAuMenu, platSante, platEnfant" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/test/menuFactTests/MenuFactTest.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
