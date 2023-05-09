@@ -5,6 +5,7 @@ import inventaire.Inventaire;
 import menufact.Chef;
 import menufact.Client;
 import menufact.facture.exceptions.FactureException;
+import menufact.plats.EventListener;
 import menufact.plats.EventManager;
 //import menufact.plats.NouveauPlatListener;
 import menufact.plats.PlatChoisi;
@@ -25,7 +26,7 @@ public class Facture {
     private String description;
     private FactureEtat etat;
     private ArrayList<PlatChoisi> platchoisi = new ArrayList<PlatChoisi>();
-    private int courant;
+    private int courant = 0;
     private Client client;
 
     private Inventaire inventaire;
@@ -124,7 +125,7 @@ public class Facture {
         platChoisiFactory = new PlatChoisiFactory();
         date = new Date();
         etat = FactureEtat.OUVERTE;
-        courant = -1;
+        courant = 0;
         this.description = description;
         events = new EventManager("nouveauPlat");
     }
@@ -160,6 +161,10 @@ public class Facture {
 
     public void setChef(Chef chef) {
         events.subscribe("nouveauPlat", chef);
+    }
+
+    public void setSuscriber(EventListener suscriber) {
+        events.subscribe("nouveauPlat", suscriber);
     }
 
     /**
@@ -218,6 +223,14 @@ public class Facture {
 
     public Inventaire getInventaire(){
         return inventaire;
+    }
+
+    public PlatChoisi getPlatCourant(){
+        return platchoisi.get(courant);
+    }
+
+    public Client getClient(){
+        return client;
     }
 }
 

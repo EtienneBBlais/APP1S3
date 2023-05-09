@@ -25,4 +25,6 @@ public class MenuFactView {
     public void afficherPlat(IPlat plat){
         System.out.println(plat);
     }
+
+    public void afficherNotif(String notif){System.out.println(notif);}
 }

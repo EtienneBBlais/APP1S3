@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Ajout test unitaire menuFact">
-      <change afterPath="$PROJECT_DIR$/test/menuFactTests/MenuFactControllerTest.java" afterDir="false" />
+    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/ingredients/QuantiteIngredient.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/ingredients/QuantiteIngredient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Chef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFactView.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFactView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/facture/Facture.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/facture/Facture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/Chef.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/Chef.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/Menu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/APP1S3/menufact/facture/Facture.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/APP1S3/menufact/facture/Facture.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/menuFactTests/MenuFactControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/menuFactTests/MenuFactControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +89,7 @@
       <recent name="menufact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in APP1S3">
+  <component name="RunManager" selected="Application.TestMenuFact03">
     <configuration name="TestMenuFact03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="menufact.TestMenuFact03" />
       <module name="APP1S3" />
@@ -116,16 +126,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LegumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MenuFactControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="APP1S3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ingredientsTests.*" />
+          <option name="PATTERN" value="menuFactTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ingredientsTests" />
-      <option name="MAIN_CLASS_NAME" value="ingredientsTests.LegumeTest" />
+      <option name="PACKAGE_NAME" value="menuFactTests" />
+      <option name="MAIN_CLASS_NAME" value="menuFactTests.MenuFactControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMenuFact03" />
         <item itemvalue="JUnit.All in APP1S3" />
+        <item itemvalue="JUnit.MenuFactControllerTest" />
         <item itemvalue="JUnit.MenuFactTest" />
         <item itemvalue="JUnit.IngredientExceptionTest" />
-        <item itemvalue="Application.TestMenuFact03" />
-        <item itemvalue="JUnit.LegumeTest" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683572969941</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="1">
+      <created>1683589394886</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1683589394886</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +293,8 @@
     <MESSAGE value="Test unitaire pour les ingredient fini" />
     <MESSAGE value="Modification facture, overload == platAuMenu, platSante, platEnfant" />
     <MESSAGE value="Ajout test unitaire menuFact" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout test unitaire menuFact" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -20,6 +20,10 @@ public class QuantiteIngredient {
             this.quantite = quantite;
     }
 
+    public QuantiteIngredient(){
+
+    }
+
     /**********************************
     --Getter/Setter
      *********************************/
