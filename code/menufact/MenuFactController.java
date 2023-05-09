@@ -6,10 +6,7 @@ import inventaire.Inventaire;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
 import menufact.facture.exceptions.FactureException;
-import menufact.plats.EventListener;
-import menufact.plats.IPlat;
-import menufact.plats.PlatAuMenu;
-import menufact.plats.PlatChoisi;
+import menufact.plats.*;
 
 public class MenuFactController implements EventListener {
 
@@ -146,6 +143,10 @@ public class MenuFactController implements EventListener {
         menuFact.FactureCourant().payer();
     }
 
+    public void genererFacture(){
+        menuFactView.afficherFactureGenere(menuFact.FactureCourant().genererFacture());
+    }
+
     public void associerClient(Client client){
         menuFact.FactureCourant().associerClient(client);
     }
@@ -158,6 +159,13 @@ public class MenuFactController implements EventListener {
         return menuFact.FactureCourant();
     }
 
+    public void afficherRecette(Recette recette){
+        menuFactView.afficherRecette(recette);
+    }
+
+    public void afficherInventaire(){
+        menuFactView.afficherInventaire(Inventaire.getInstance());
+    }
     @Override
     public void update(String eventType, PlatChoisi zePlat, Inventaire inventaire) {
         String affichage = "";

@@ -24,10 +24,10 @@ public class Chef implements EventListener {
                     for (QuantiteIngredient ingredientRecette : ingredients) {
                         if (ingredientRecette != null && ingredientInventaire.getIngredient() == ingredientRecette.getIngredient()) {
                             if (ingredientRecette.getQuantite() <= ingredientInventaire.getQuantite()) {
-                                ingredientInventaire.setQuantite(ingredientInventaire.getQuantite() - ingredientRecette.getQuantite());
-                                System.out.println("\nOn enleve des aliments de linventiareeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n");
+                                ingredientInventaire.setQuantite(ingredientInventaire.getQuantite() - (zePlat.getQuantite())*ingredientRecette.getQuantite());
+                                //System.out.println("\nOn enleve des aliments de linventiareeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee\n");
                             } else {
-                                System.out.println(zePlat.getEtat().onPuDIngredient());
+                                //System.out.println(zePlat.getEtat().onPuDIngredient());
                                 break;
                             }
                         }

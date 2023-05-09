@@ -6,4 +6,9 @@ public abstract class PlatDecorator implements IPlat {
     public PlatDecorator(IPlat plat) {
         this.plat = plat;
     }
+
+    @Override
+    public String toString(){
+        return plat.toString();
+    }
 }

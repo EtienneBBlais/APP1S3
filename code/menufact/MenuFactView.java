@@ -2,6 +2,7 @@ package menufact;
 
 import menufact.facture.Facture;
 import menufact.plats.*;
+import inventaire.Inventaire;
 public class MenuFactView {
 
     /************************
@@ -27,4 +28,16 @@ public class MenuFactView {
     }
 
     public void afficherNotif(String notif){System.out.println(notif);}
+
+    public void afficherFactureGenere(String facture){
+        System.out.println(facture);
+    }
+
+    public void afficherRecette(Recette recette){
+        System.out.println(recette);
+    }
+
+    public void afficherInventaire(Inventaire inventaire){
+        System.out.println(inventaire);
+    }
 }
