@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Ajout des notification au mvc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/menuFactTests/ClientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/menuFactTests/ClientTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/menuFactTests/MenuTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/menuFactTests/MenuTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="test unitaire, client" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -264,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683596939691</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="test unitaire, client">
+      <created>1683598790597</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1683598790597</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,7 +295,8 @@
     <MESSAGE value="Ajout test unitaire menuFact" />
     <MESSAGE value="1" />
     <MESSAGE value="Ajout des notification au mvc" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajout des notification au mvc" />
+    <MESSAGE value="test unitaire, client" />
+    <option name="LAST_COMMIT_MESSAGE" value="test unitaire, client" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
