@@ -16,7 +16,7 @@ public class Chef implements EventListener {
     public void update(String eventType, PlatChoisi zePlat, Inventaire inventaire) {
         //System.out.println("Chef: Merci de me notifier de la commande BOY");
 
-        QuantiteIngredient ingredients[] = zePlat.getPlat().getRecette().getQuantiteIngredient();
+        QuantiteIngredient[] ingredients = zePlat.getPlat().getRecette().getQuantiteIngredient();
 
         try {
             for (QuantiteIngredient ingredientInventaire : inventaire.getQuantiteIngredient()) {

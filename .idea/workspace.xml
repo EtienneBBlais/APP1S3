@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_INJECTED_CODE" value="false" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Ajout test unitaire menuFact">
-      <change afterPath="$PROJECT_DIR$/test/menuFactTests/CommanderEtatTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/menuFactTests/IngrédientInsuffisantEtatTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/menuFactTests/PreparationEtatTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/menuFactTests/ServiEtatTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/menuFactTests/TerminerEtatTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/code.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/inventaire/Inventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/inventaire/Inventaire.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/Chef.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Chef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFact.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/MenuFactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/MenuFactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/TestMenuFact03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/facture/Facture.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/facture/Facture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatAuMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatChoisi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatEnfant.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatEnfant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/PlatSante.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/menufact/plats/Recette.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/plats/Recette.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ingredientsTests/FactoryIngredientTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ingredientsTests/FactoryIngredientTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/menuFactTests/ChefTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/menuFactTests/ChefTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,32 +59,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/etien/Downloads/drawio&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/etien/Downloads/drawio",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -84,7 +101,7 @@
       <recent name="menufact" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in APP1S3">
+  <component name="RunManager" selected="Application.TestMenuFact03">
     <configuration name="TestMenuFact03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="menufact.TestMenuFact03" />
       <module name="APP1S3" />
@@ -155,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMenuFact03" />
         <item itemvalue="JUnit.All in APP1S3" />
         <item itemvalue="JUnit.IngrédientInsuffisantEtatTest.onCommande" />
         <item itemvalue="JUnit.IngrédientInsuffisantEtatTest" />
         <item itemvalue="JUnit.ServiEtatTest.onPreparation" />
-        <item itemvalue="Application.TestMenuFact03" />
       </list>
     </recent_temporary>
   </component>
@@ -175,6 +192,9 @@
       <workItem from="1683146882856" duration="5719000" />
       <workItem from="1683589443691" duration="2713000" />
       <workItem from="1683592215295" duration="10524000" />
+      <workItem from="1683647363902" duration="91000" />
+      <workItem from="1683647475145" duration="9000" />
+      <workItem from="1683647885325" duration="1904000" />
     </task>
     <task id="LOCAL-00001" summary="ii">
       <created>1683225294142</created>

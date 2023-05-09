@@ -7,9 +7,9 @@ import menufact.plats.PlatAuMenu;
 import java.util.ArrayList;
 
 public class Menu {
-    private String description;
+    private final String description;
     private int courant;
-    private ArrayList<IPlat> plat = new ArrayList<IPlat>();
+    private final ArrayList<IPlat> plat = new ArrayList<IPlat>();
 
     public Menu(String description) {
         this.description = description;
@@ -61,10 +61,9 @@ public class Menu {
         if(o != this){
             return false;
         }
-        if (!(o instanceof Menu)) {
+        if (!(o instanceof Menu c)) {
             return false;
         }
-        Menu c = (Menu) o;
         if(c.plat.size() != this.plat.size()){
             return false;
         }

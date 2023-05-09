@@ -14,13 +14,13 @@ public class MenuFact {
     --Attributs
      ***********************/
 
-    private Inventaire inventaire;
+    private final Inventaire inventaire;
 
-    private Chef chef = new Chef();
+    private final Chef chef = new Chef();
 
-    private ArrayList<Menu> menu = new ArrayList<Menu>();
+    private final ArrayList<Menu> menu = new ArrayList<Menu>();
 
-    private ArrayList<Facture> factures = new ArrayList<Facture>();
+    private final ArrayList<Facture> factures = new ArrayList<Facture>();
     //private Menu menu;
 
     private int courantMenu;

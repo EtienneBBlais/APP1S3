@@ -10,7 +10,7 @@ public class Recette{
      ***************************/
     private final int capaciteIngredient = 5;
     private int taille;
-    private QuantiteIngredient[] liste;
+    private final QuantiteIngredient[] liste;
 
     /****************************
     --Constructeur

@@ -21,11 +21,11 @@ import java.util.Date;
  */
 public class Facture {
     public EventManager events;
-    private PlatChoisiFactory platChoisiFactory;
-    private Date date;
-    private String description;
+    private final PlatChoisiFactory platChoisiFactory;
+    private final Date date;
+    private final String description;
     private FactureEtat etat;
-    private ArrayList<PlatChoisi> platchoisi = new ArrayList<PlatChoisi>();
+    private final ArrayList<PlatChoisi> platchoisi = new ArrayList<PlatChoisi>();
     private int courant = 0;
     private Client client;
 
@@ -191,8 +191,8 @@ public class Facture {
      */
     public String genererFacture()
     {
-        String lesPlats = new String();
-        String factureGenere = new String();
+        String lesPlats = "";
+        String factureGenere = "";
 
         int i =1;
 

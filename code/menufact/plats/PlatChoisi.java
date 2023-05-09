@@ -1,7 +1,7 @@
 package menufact.plats;
 
 public class PlatChoisi {
-    private IPlat plat;
+    private final IPlat plat;
     private PlatEtat etat;
     private int quantite;
 

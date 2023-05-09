@@ -26,10 +26,9 @@ public class PlatEnfant extends PlatDecorator {
         if (o != this) {
             return false;
         }
-        if (!(o instanceof PlatEnfant)) {
+        if (!(o instanceof PlatEnfant c)) {
             return false;
         }
-        PlatEnfant c = (PlatEnfant) o;
         if (c.getCode() != this.getCode()) {
             return false;
         }
@@ -39,10 +38,7 @@ public class PlatEnfant extends PlatDecorator {
         if (c.getDescription() != this.getDescription()) {
             return false;
         }
-        if(c.getProportion() != this.proportion){
-            return false;
-        }
-        return true;
+        return c.getProportion() == this.proportion;
     }
 
     @Override

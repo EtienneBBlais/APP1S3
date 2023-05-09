@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class FactoryIngredientTest {
-    private FactoryIngredient factory = new FactoryIngredient();
+    private final FactoryIngredient factory = new FactoryIngredient();
     @Test
     @DisplayName("Test factory: Viande")
     void nouveauIngredient_viande(){

@@ -10,29 +10,29 @@ import menufact.plats.*;
 
 public class TestMenuFact03 {
 
-    private MenuFactController menuController;
+    private final MenuFactController menuController;
 
-    private PlatAuMenu p1;
-    private PlatAuMenu p2;
-    private PlatAuMenu p3;
-    private PlatAuMenu p4;
-    private PlatAuMenu p5;
+    private final PlatAuMenu p1;
+    private final PlatAuMenu p2;
+    private final PlatAuMenu p3;
+    private final PlatAuMenu p4;
+    private final PlatAuMenu p5;
     private PlatSante ps1;
     private PlatSante ps2;
     private PlatSante ps3;
     private PlatSante ps4;
     private PlatSante ps5;
 
-    private FactoryIngredient factory = new FactoryIngredient();
+    private final FactoryIngredient factory = new FactoryIngredient();
     private static Menu m1;
     private static Menu m2;
 
 
 
 
-    private static Facture f1 = new Facture("Ma facture");
+    private static final Facture f1 = new Facture("Ma facture");
 
-    private Client c1;
+    private final Client c1;
 
     public TestMenuFact03(){
         menuController = new MenuFactController();

@@ -30,10 +30,9 @@ public class PlatSante extends PlatDecorator {
         if (o != this) {
             return false;
         }
-        if (!(o instanceof PlatSante)) {
+        if (!(o instanceof PlatSante c)) {
             return false;
         }
-        PlatSante c = (PlatSante) o;
         if (c.getCode() != this.getCode()) {
             return false;
         }
@@ -49,10 +48,7 @@ public class PlatSante extends PlatDecorator {
         if(c.getGras() != this.gras){
             return false;
         }
-        if(c.getKcal() != this.kcal){
-            return false;
-        }
-        return true;
+        return c.getKcal() == this.kcal;
     }
 
     public double getKcal() {

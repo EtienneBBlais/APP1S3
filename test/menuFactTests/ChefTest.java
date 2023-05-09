@@ -24,7 +24,7 @@ class ChefTest {
 
     private Chef chef;
     private PlatChoisi platChoisi;
-    private Inventaire inventaire = Inventaire.getInstance();
+    private final Inventaire inventaire = Inventaire.getInstance();
 
     private ByteArrayOutputStream output;
 

@@ -43,20 +43,16 @@ public class PlatAuMenu implements IPlat {
         if (o != this) {
             return false;
         }
-        if (!(o instanceof PlatAuMenu)) {
+        if (!(o instanceof PlatAuMenu c)) {
             return false;
         }
-        PlatAuMenu c = (PlatAuMenu) o;
         if (c.getCode() != this.code) {
             return false;
         }
         if (c.getPrix() != this.prix) {
             return false;
         }
-        if (c.getDescription() != this.description) {
-            return false;
-        }
-        return true;
+        return c.getDescription() == this.description;
     }
 
     /***************************************

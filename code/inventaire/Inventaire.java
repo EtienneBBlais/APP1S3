@@ -10,7 +10,7 @@ public class Inventaire {
     --Attributs
      ************************/
     private static Inventaire instance;
-    private ArrayList<QuantiteIngredient> lesIngredients = new ArrayList<QuantiteIngredient>();
+    private final ArrayList<QuantiteIngredient> lesIngredients = new ArrayList<QuantiteIngredient>();
 
     /**************************
     --Constructeur

@@ -13,9 +13,9 @@ import menufact.plats.PlatChoisi;
 
 public class MenuFactController implements EventListener {
 
-    private MenuFact menuFact;
+    private final MenuFact menuFact;
 
-    private MenuFactView menuFactView;
+    private final MenuFactView menuFactView;
 
     public MenuFactController(){
         menuFact = new MenuFact();
