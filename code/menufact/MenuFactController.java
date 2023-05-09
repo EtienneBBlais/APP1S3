@@ -1,13 +1,17 @@
 package menufact;
 
+import ingredients.QuantiteIngredient;
+import ingredients.exceptions.IngredientException;
+import inventaire.Inventaire;
 import menufact.exceptions.MenuException;
 import menufact.facture.Facture;
 import menufact.facture.exceptions.FactureException;
+import menufact.plats.EventListener;
 import menufact.plats.IPlat;
 import menufact.plats.PlatAuMenu;
 import menufact.plats.PlatChoisi;
 
-public class MenuFactController {
+public class MenuFactController implements EventListener {
 
     private MenuFact menuFact;
 
@@ -79,6 +83,10 @@ public class MenuFactController {
         }
     }
 
+    public Menu getMenuCourant(){
+        return menuFact.menuCourant();
+    }
+
     public void menuPrecedent() throws MenuException {
         try {
             menuFact.positionPrecedenteMenu();
@@ -104,7 +112,9 @@ public class MenuFactController {
     }
 
     public void ajouterFacture(Facture facture){
+        facture.setSuscriber(this);
         menuFact.ajouteFacture(facture);
+
     }
 
     public void afficherFactureCourant(){
@@ -139,4 +149,25 @@ public class MenuFactController {
     public void associerClient(Client client){
         menuFact.FactureCourant().associerClient(client);
     }
+
+    public PlatChoisi getPlatFactureCourant(){
+        return menuFact.getPlatFactureCourant();
+    }
+
+    public Facture getFactureCourant(){
+        return menuFact.FactureCourant();
+    }
+
+    @Override
+    public void update(String eventType, PlatChoisi zePlat, Inventaire inventaire) {
+        String affichage = "";
+        affichage += zePlat.getEtat().onPreparation();
+        affichage += "\n";
+        affichage += zePlat.getEtat().onTermine();
+        affichage += "\n";
+        affichage += zePlat.getEtat().onServi();
+        affichage += "\n";
+        menuFactView.afficherNotif(affichage);
+    }
+
 }

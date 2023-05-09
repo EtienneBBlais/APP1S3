@@ -14,7 +14,7 @@ public class Chef implements EventListener {
 
     @Override
     public void update(String eventType, PlatChoisi zePlat, Inventaire inventaire) {
-        System.out.println("Chef: Merci de me notifier de la commande BOY");
+        //System.out.println("Chef: Merci de me notifier de la commande BOY");
 
         QuantiteIngredient ingredients[] = zePlat.getPlat().getRecette().getQuantiteIngredient();
 
@@ -39,9 +39,9 @@ public class Chef implements EventListener {
             System.err.println("Erreur lors de la mise à jour des ingrédients: " + ie.getMessage());
         }
 
-        System.out.println(zePlat.getEtat().onPreparation());
-        System.out.println(zePlat.getEtat().onTermine());
-        System.out.println(zePlat.getEtat().onServi());
+        //System.out.println(zePlat.getEtat().onPreparation());
+        //System.out.println(zePlat.getEtat().onTermine());
+        //System.out.println(zePlat.getEtat().onServi());
     }
 
 

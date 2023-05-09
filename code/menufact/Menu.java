@@ -15,7 +15,7 @@ public class Menu {
         this.description = description;
     }
 
-    void ajoute (IPlat p)
+    public void ajoute (IPlat p)
     {
         plat.add(p);
     }

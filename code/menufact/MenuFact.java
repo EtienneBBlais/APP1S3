@@ -4,8 +4,7 @@ import inventaire.Inventaire;
 import menufact.exceptions.MenuException;
 import menufact.facture.exceptions.FactureException;
 import menufact.facture.Facture;
-
-
+import menufact.plats.PlatChoisi;
 
 
 import java.util.ArrayList;
@@ -105,5 +104,9 @@ public class MenuFact {
             throw new FactureException("On depasse le nombre minimale de facture");
         else
             courantFacture--;
+    }
+
+    public PlatChoisi getPlatFactureCourant(){
+        return factures.get(courantFacture).getPlatCourant();
     }
 }

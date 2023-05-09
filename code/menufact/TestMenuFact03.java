@@ -69,81 +69,38 @@ public class TestMenuFact03 {
     }
     public static void main(String[] args) {
         TestMenuFact03 t = new TestMenuFact03();
-//
-//        t.test1_AffichePlatsAuMenu();
-//        t. test2_AffichePlatsSante();
-//        try {
-//            t.test3_AjoutMenu();
-//        } catch (MenuException e) {
-//            System.out.println(e.getMessage());
-//        }
-//
-//        t.test4_AjoutPlatsAuMenu();
-//
-//
-//        try {
-//            t.test5_DeplacementMenuAvancer();
-//        } catch (MenuException e) {
-//            System.out.println(e.getMessage());
-//        }
-//
-//        try {
-//            t.test6_DeplacementMenuReculer();
-//        } catch (MenuException e) {
-//            System.out.println(e.getMessage());
-//        }
-//
-//        try {
-//            t.test7_CreerFacture();
-//        } catch (FactureException e) {
-//            System.out.println(e.getMessage());
-//        }
-//
-//
-//        t.test8_AjouterClientFacture();
-//
-//        try {
-//            t.test8_AjouterPlatsFacture(1);
-//        } catch (FactureException fe)
-//        {
-//            System.out.println(fe.getMessage());
-//        }
-//        catch (MenuException me)
-//        {
-//            System.out.println(me);
-//        }
-//
-//        t.test9_PayerFacture();
 
-//        try {
-//            t.test8_AjouterPlatsFacture(1);
-//        } catch (FactureException fe)
-//        {
-//            System.out.println(fe.getMessage());
-//        }
-//        catch (MenuException me)
-//        {
-//            System.out.println(me);
-//        }
-//
-//        try {
-//            f1.ouvrir();
-//        } catch (FactureException fe)
-//        {
-//            System.out.println(fe.getMessage());
-//        }
-//
-//        try {
-//            t.test10_AffichageRecette();
-//        }
-//        catch (IngredientException ie)
-//        {
-//            System.out.println(ie.getMessage());
-//        }
-//        catch (MenuException me)
-//        {
-//            System.out.println(me.getMessage());
-//        }
+        t.test1_AffichePlatsAuMenu();
+        t. test2_AffichePlatsSante();
+        try {
+            t.test3_AjoutMenu();
+        } catch (MenuException e) {
+            System.out.println(e.getMessage());
+        }
+
+        t.test4_AjoutPlatsAuMenu();
+
+
+        try {
+            t.test5_DeplacementMenuAvancer();
+        } catch (MenuException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            t.test6_DeplacementMenuReculer();
+        } catch (MenuException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            t.test7_CreerFacture();
+        } catch (FactureException e) {
+            System.out.println(e.getMessage());
+        }
+
+
+        t.test8_AjouterClientFacture();
 
         try {
             t.test11_Inventaire();
@@ -155,6 +112,51 @@ public class TestMenuFact03 {
         } catch (FactureException e) {
             throw new RuntimeException(e);
         }
+
+        try {
+            t.test8_AjouterPlatsFacture(1);
+        } catch (FactureException fe)
+        {
+            System.out.println(fe.getMessage());
+        }
+        catch (MenuException me)
+        {
+            System.out.println(me);
+        }
+
+        t.test9_PayerFacture();
+
+        try {
+            t.test8_AjouterPlatsFacture(1);
+        } catch (FactureException fe)
+        {
+            System.out.println(fe.getMessage());
+        }
+        catch (MenuException me)
+        {
+            System.out.println(me);
+        }
+
+        try {
+            f1.ouvrir();
+        } catch (FactureException fe)
+        {
+            System.out.println(fe.getMessage());
+        }
+
+        try {
+            t.test10_AffichageRecette();
+        }
+        catch (IngredientException ie)
+        {
+            System.out.println(ie.getMessage());
+        }
+        catch (MenuException me)
+        {
+            System.out.println(me.getMessage());
+        }
+
+
 
 
         System.out.println("FIN DE TOUS LES TESTS...");
@@ -326,7 +328,7 @@ public class TestMenuFact03 {
         System.out.println("===test8_AjouterPlatsFacture");
         System.out.println("==================================");
 
-
+        menuController.getFactureCourant().setInventaire(Inventaire.getInstance());
         PlatChoisi platChoisi = new PlatChoisi(m1.platCourant(),5);
         try
         {
