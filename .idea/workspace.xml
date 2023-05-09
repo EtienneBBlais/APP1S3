@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="2">
+    <list default="true" id="a1cc0b0f-104a-479e-b979-bac0d00fb3e6" name="Changes" comment="Ajout final des tests unitaire">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/inventaire/Inventaire.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/inventaire/Inventaire.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/menufact/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/menufact/Menu.java" afterDir="false" />
@@ -285,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683644013777</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ajout final des tests unitaire">
+      <created>1683646735776</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1683646735776</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +322,8 @@
     <MESSAGE value="Ajout des notification au mvc" />
     <MESSAGE value="test unitaire, client" />
     <MESSAGE value="2" />
-    <option name="LAST_COMMIT_MESSAGE" value="2" />
+    <MESSAGE value="Ajout final des tests unitaire" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ajout final des tests unitaire" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
