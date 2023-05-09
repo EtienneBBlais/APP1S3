@@ -84,4 +84,8 @@ public class PlatEnfant extends PlatDecorator {
     public void setRecette(Recette recette) {
         this.recette = recette;
     }
+
+    public void setProportion(double v) {
+        proportion = v;
+    }
 }
