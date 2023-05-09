@@ -34,6 +34,9 @@ public class Inventaire {
         return lesIngredients;
     }
 
+    public int getSize(){
+        return lesIngredients.size();
+    }
 
     //public get
 

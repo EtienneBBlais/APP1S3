@@ -46,6 +46,10 @@ public class Menu {
             courant--;
     }
 
+    public String getDescription(){
+        return description;
+    }
+
 
     @Override
     public String toString() {

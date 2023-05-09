@@ -22,39 +22,30 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class ChefTest {
 
-    private Chef chef;
+    private Chef chef = new Chef();
     private PlatChoisi platChoisi;
     private Inventaire inventaire = Inventaire.getInstance();
 
     private ByteArrayOutputStream output;
 
 
-    @BeforeEach
-    void setUp() throws IngredientException, MenuException {
+
+
+    @Test
+    void testUpdate() throws IngredientException, MenuException {
         Ingredient ingredient = new Ingredient("oignon","rouge", TypeIngredient.LEGUME);
         QuantiteIngredient quantiteIngredient = new QuantiteIngredient(ingredient, 1);
         inventaire.ajouter(quantiteIngredient);
-        chef = new Chef();
         Recette recette = new Recette();
         recette.ajouterIngredient(quantiteIngredient);
         IPlat plat = new PlatAuMenu(1, "oignon", 20);
         plat.setRecette(recette);
         platChoisi = new PlatChoisi(plat, 2);
-
-
-
-
-        output = new ByteArrayOutputStream();
-        System.setOut(new PrintStream(output));
-    }
-
-    @Test
-    void testUpdate() throws IngredientException {
         chef.update("COMMAND", platChoisi, inventaire);
 
+        int i = inventaire.getSize();
 
-
-        assertEquals(1, inventaire.getQuantiteIngredient().get(0).getQuantite());
+        assertEquals(0, inventaire.getQuantiteIngredient().get(i-1).getQuantite());
     }
 
     @Test
