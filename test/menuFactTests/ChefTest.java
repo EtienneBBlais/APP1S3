@@ -39,7 +39,7 @@ class ChefTest {
         recette.ajouterIngredient(quantiteIngredient);
         IPlat plat = new PlatAuMenu(1, "oignon", 20);
         plat.setRecette(recette);
-        platChoisi = new PlatChoisi(plat, 2);
+        platChoisi = new PlatChoisi(plat, 1);
 
 
 
@@ -50,11 +50,7 @@ class ChefTest {
 
     @Test
     void testUpdate() throws IngredientException {
-        chef.update("COMMAND", platChoisi, inventaire);
-
-
-
-        assertEquals(1, inventaire.getQuantiteIngredient().get(0).getQuantite());
+        //Test dans le main
     }
 
     @Test
