@@ -31,7 +31,7 @@ public class PlatAuMenu implements IPlat {
      *********************************/
     @Override
     public String toString() {
-        return "menufact.plats.PlatAuMenu{" +
+        return "PlatAuMenu{" +
                 "code=" + code +
                 ", description='" + description + '\'' +
                 ", prix=" + prix +

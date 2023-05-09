@@ -173,6 +173,7 @@ public class Facture {
      */
     @Override
     public String toString() {
+
         return "Facture\n{" +
                 "date=" + date +
                 ", description='" + description + '\'' +
@@ -183,6 +184,8 @@ public class Facture {
                 ", TPS=" + TPS +
                 ", TVQ=" + TVQ +
                 '}';
+
+
     }
 
     /**

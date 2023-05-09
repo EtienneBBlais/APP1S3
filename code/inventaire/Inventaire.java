@@ -38,6 +38,9 @@ public class Inventaire {
         return lesIngredients.size();
     }
 
-    //public get
+    @Override
+    public String toString(){
+        return lesIngredients.toString();
+    }
 
 }

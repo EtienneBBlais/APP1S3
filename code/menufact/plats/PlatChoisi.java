@@ -13,7 +13,7 @@ public class PlatChoisi {
 
     @Override
     public String toString() {
-        return "menufact.plats.PlatChoisi{" +
+        return "PlatChoisi{" +
                 "quantite=" + quantite +
                 ", plat=" + plat +
                 '}';
